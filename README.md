@@ -3,7 +3,7 @@
 Универсальный транспорт для платформы 1С:Предприятие 8.3: неопубликованные базы и внешние скрипты отправляют произвольный JSON и файлы в центральную опубликованную базу по HTTPS. Получатель сохраняет историю без анализа содержимого.
 
 **Статус:** проектирование, разработка ещё не выполнена. Релизов пока нет.  
-**[Последний релиз (после публикации)](https://github.com/BurimBasic/1C-telemetry/releases/latest)** · [Все релизы](https://github.com/BurimBasic/1C-telemetry/releases) · [История изменений](CHANGELOG.md)
+**Последний релиз:** пока не опубликован. · [Все релизы](https://github.com/BurimBasic/1C-telemetry/releases) · [История изменений](CHANGELOG.md)
 
 ## Архитектура
 
@@ -42,6 +42,10 @@
 - [Сборка и выдача ZIP](docs/RELEASE-RUNBOOK.md)
 - [Безопасность](SECURITY.md)
 - [Авторство и права](COPYRIGHT.md)
+
+## Задачи разработки
+
+[Главная задача v1.0 (#1)](https://github.com/BurimBasic/1C-telemetry/issues/1) · [Клиент (#2)](https://github.com/BurimBasic/1C-telemetry/issues/2) · [Сервер (#3)](https://github.com/BurimBasic/1C-telemetry/issues/3) · [Примеры (#4)](https://github.com/BurimBasic/1C-telemetry/issues/4) · [Проверки и релиз (#5)](https://github.com/BurimBasic/1C-telemetry/issues/5)
 
 ## Поставка
 
