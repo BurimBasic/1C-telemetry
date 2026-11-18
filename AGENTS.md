@@ -1,6 +1,6 @@
 # 1C-telemetry — обязательные правила для разработчиков и агентов
 
-Перед работой читать README, CHANGELOG, docs/SPECIFICATION.md, docs/API.md, docs/TRANSFER-AND-ERRORS.md, docs/CODE-DOCUMENTATION-STANDARD.md, docs/RELEASE-RUNBOOK.md и SECURITY.md. Применены общие нормы OFFICE20 без переноса его инфраструктуры, MCP, DDL, Gateway, секретов и прикладных данных.
+Перед работой читать README, CHANGELOG, docs/SPECIFICATION.md, docs/API.md, docs/TRANSFER-AND-ERRORS.md, docs/CODE-DOCUMENTATION-STANDARD.md, docs/RELEASE-RUNBOOK.md, docs/TEST-PLAN.md и SECURITY.md. Применены общие нормы OFFICE20 без переноса его инфраструктуры, MCP, DDL, Gateway, секретов и прикладных данных.
 
 1. Если поручена реализация — выполнить её в репозитории, не подменять планом/Issue/TODO. Исключение — прямо запрошенная документация/исследование. Сначала текущий main/открытые PR/точные SHA, затем минимальное подтверждённое решение. Не размножать задачи. Не ждать указания продолжить независимые разрешённые шаги.
 2. Ветка от свежего main, один заявленный компонент (клиент/сервер/примеры/CI/документация); общий контракт двух сторон — явно указать в PR. Адресные тесты, тестовая установка, позитивная/негативная приёмка, PR в main, owner review и merge. Не обходить защиту ветки. Не менять чужие компоненты и базы.
