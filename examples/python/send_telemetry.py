@@ -6,7 +6,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 import requests
 
@@ -16,11 +16,11 @@ def send(mode, path):
     base = urlsplit(os.environ["TLM_URL"])
     token = os.environ["TLM_TOKEN"]
     if (base.scheme != "https" or not base.hostname or base.username is not None
-            or base.query or base.fragment or not re.fullmatch(r"[a-f0-9]{64}", token)):
+            or base.query or base.fragment or not token):
         raise ValueError("Проверьте HTTPS URL и токен отправителя")
     url = base.geturl().rstrip("/") + "/" + mode
     options = {
-        "headers": {"X-Token": token, "Accept": "application/json"},
+        "headers": {"X-Token": quote(token, safe=""), "Accept": "application/json"},
         "allow_redirects": False,
         "verify": os.environ.get("TLM_PEM") or True,
         "timeout": 60,

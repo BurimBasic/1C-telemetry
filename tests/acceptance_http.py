@@ -10,7 +10,7 @@ import secrets
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 import requests
 
@@ -19,7 +19,7 @@ def request(url, token, method, route, expected, *, payload=None, media=None, na
     """Проверяет HTTP и прикладной ответ. Возвращает безопасное подтверждение без URL и токена."""
     headers = {}
     if token:
-        headers["X-Token"] = token
+        headers["X-Token"] = quote(token, safe="")
     if media:
         headers["Content-Type"] = media
     started = time.monotonic()

@@ -63,25 +63,24 @@
 					</Type>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="a3f7e53d-23ca-53ec-bf01-deeb6375dee4">
+			<Attribute uuid="e841fab7-3748-519b-8c8a-f4d570bd17a8">
 				<Properties>
-					<Name>ХешТокена</Name>
+					<Name>Токен</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>SHA-256 токена</v8:content>
+							<v8:content>Токен</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>SHA-256 токена</Comment>
+					<Comment>Токен, назначенный администратором вручную.</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>64</v8:Length>
+							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>true</PasswordMode>
-					<Indexing>Index</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>DontUse</DataHistory>
 				</Properties>

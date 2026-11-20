@@ -12,11 +12,14 @@ $base = [Uri]$env:TLM_URL
 if (-not $base.IsAbsoluteUri -or $base.Scheme -ne 'https' -or $base.UserInfo -or $base.Query -or $base.Fragment) {
     throw 'Укажите HTTPS URL без параметров и данных входа в TLM_URL.'
 }
-if ($env:TLM_TOKEN -cnotmatch '^[0-9a-f]{64}$') { throw 'Укажите токен отправителя в TLM_TOKEN.' }
+if ([string]::IsNullOrEmpty($env:TLM_TOKEN)) { throw 'Укажите токен отправителя в TLM_TOKEN.' }
+# EscapeDataString в .NET Framework может оставлять знаки из RFC 2396.
+$token = [Uri]::EscapeDataString($env:TLM_TOKEN)
+$token = $token.Replace('!', '%21').Replace("'", '%27').Replace('(', '%28').Replace(')', '%29').Replace('*', '%2A').Replace('%7E', '~')
 $arguments = @{
     Uri = $base.AbsoluteUri.TrimEnd('/') + '/' + $Mode
     Method = 'Get'
-    Headers = @{'X-Token' = $env:TLM_TOKEN; Accept = 'application/json'}
+    Headers = @{'X-Token' = $token; Accept = 'application/json'}
     UseBasicParsing = $true
     MaximumRedirection = 0
     TimeoutSec = 60

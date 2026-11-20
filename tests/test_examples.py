@@ -85,10 +85,10 @@ class ExampleTests(unittest.TestCase):
         cls.base = f"https://127.0.0.1:{cls.server.server_port}"
         cls.token = secrets.token_hex(32)
 
-    def python(self, prefix, mode, path=None, *, trust=True, base=None):
+    def python(self, prefix, mode, path=None, *, trust=True, base=None, token=None):
         """Запускает настоящий скрипт Python с тестовым токеном и TEMP PEM."""
         environment = {**os.environ, "TLM_URL": (base or self.base) + prefix,
-                       "TLM_TOKEN": self.token, "TLM_PEM": str(self.pem) if trust else ""}
+                       "TLM_TOKEN": self.token if token is None else token, "TLM_PEM": str(self.pem) if trust else ""}
         command = [sys.executable, str(EXAMPLE), mode]
         if path:
             command.append(str(path))
@@ -109,6 +109,17 @@ class ExampleTests(unittest.TestCase):
             self.assertTrue(result.stdout.startswith("201 "))
             expected_names = {"name": [name]} if mode == "file" else {}
             self.assertEqual(self.server.received[-1], ("POST", "/central/" + mode, expected_names, self.token, data))
+
+    @unittest.skipUnless(importlib.util.find_spec("requests"), "Для примера Python нужен requests")
+    def test_python_literal_and_encoded_tokens(self):
+        """Проверяет 123, один символ, Unicode, концевые пробелы и длинный заголовок."""
+        for token, header in (("123", "123"), ("x", "x"),
+                              (" А %+~!*() ", "%20%D0%90%20%25%2B~%21%2A%28%29%20"),
+                              ("я" * 256, "%D1%8F" * 256), (" ", "%20")):
+            with self.subTest(header=header[:32]):
+                result = self.python("/central", "ping", token=token)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertEqual(self.server.received[-1][3], header)
 
     @unittest.skipUnless(importlib.util.find_spec("requests"), "Для примера Python нужен requests")
     def test_python_rejects_redirect_and_bad_ok(self):

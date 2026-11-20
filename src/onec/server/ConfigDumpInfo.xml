@@ -2,13 +2,14 @@
 <!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" format="Hierarchical" version="2.17">
 	<ConfigVersions>
-		<Metadata name="Catalog.ТЛМ_Клиенты" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32" configVersion="47655c4fc001b3e79d3ef1765ec0f84c1340d113">
+		<Metadata name="Catalog.ТЛМ_Клиенты" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32" configVersion="943b81e53710850130596c6b6f37ee920e3e7bc3">
 			<Metadata name="Catalog.ТЛМ_Клиенты.Attribute.Активен" id="fdadca16-dd9a-5fab-b7c2-421560b2bdbb" />
-			<Metadata name="Catalog.ТЛМ_Клиенты.Attribute.ХешТокена" id="a3f7e53d-23ca-53ec-bf01-deeb6375dee4" />
+			<Metadata name="Catalog.ТЛМ_Клиенты.Attribute.Токен" id="e841fab7-3748-519b-8c8a-f4d570bd17a8" />
 		</Metadata>
+		<Metadata name="Catalog.ТЛМ_Клиенты.ObjectModule" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32.0" configVersion="93779317974085cb869e75bc2ca9f16c6c7ecfc0" />
 		<Metadata name="CommonModule.ТЛМ_Сервер" id="907e9279-ac5c-5681-80a2-5da2bb07dded" configVersion="a111f8b92682a33ddcaeaed30a3ffa8ed126811f" />
-		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="608e5cb664b69623e9ff7834a01dda76f1438978" />
-		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="eb1e07d1975f5cab310a0d7c13ab9fed168deff3" />
+		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="141e81d4ea5799dd516e495a30944592debd06dd" />
+		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="1ec16c5057b74debb3f26aa440ec0cb4d639b531" />
 		<Metadata name="Constant.ТЛМ_Сервер_КаталогФайлов" id="0bb77d10-1c11-52f9-b7ac-623379900a6d" configVersion="39ef6744adbdffdd2131bed7b88f933cdaa7c084" />
 		<Metadata name="Constant.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" id="8fcd8815-e872-51e5-97c1-313fc1857844" configVersion="9f3b0a3f609796d94f3ebe9a99a1f2bca0dca6f0" />
 		<Metadata name="HTTPService.ТЛМ_ПриемДанных" id="c8308973-55e6-5e93-951f-ba04764141e4" configVersion="9252bbcca9847e04a6467b96c4bd439d82b42d24">

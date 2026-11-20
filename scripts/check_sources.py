@@ -145,6 +145,11 @@ def check_extension(root, component):
                             for setting, expected in {"Global":"false", "Privileged":"false",
                                                       "Server":"true", "ServerCall":"false"}.items()),
                         xml, "неверный контекст общего модуля")
+        if kind == "Catalog":
+            script = folder / "ObjectModule.bsl"
+            modules[name] = check_bsl(script.read_text(encoding="utf-8-sig"), script)
+            require("передзаписью" in modules[name], script, "нет проверки токена при записи")
+            paths[name + ".ObjectModule"] = script
         if kind == "Subsystem":
             help_xml = folder / "Help.xml"
             require(ET.parse(help_xml).getroot()[0].text == "ru", help_xml, "нет страницы справки")

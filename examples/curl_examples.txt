@@ -2,7 +2,11 @@
 # Copyright © 2026 Тарасов Роман Олегович. Все права защищены.
 # TLM_URL и TLM_TOKEN задаются в окружении. Перед запуском проверьте доверие Windows.
 $base = $env:TLM_URL.TrimEnd('/')
-$common = @('-q','--silent','--show-error','--fail-with-body','--proto','=https','--max-time','60','-H',"X-Token: $env:TLM_TOKEN")
+if ([string]::IsNullOrEmpty($env:TLM_TOKEN)) { throw 'Укажите токен отправителя в TLM_TOKEN.' }
+# EscapeDataString в .NET Framework может оставлять знаки из RFC 2396.
+$token = [Uri]::EscapeDataString($env:TLM_TOKEN)
+$token = $token.Replace('!', '%21').Replace("'", '%27').Replace('(', '%28').Replace(')', '%29').Replace('*', '%2A').Replace('%7E', '~')
+$common = @('-q','--silent','--show-error','--fail-with-body','--proto','=https','--max-time','60','-H',"X-Token: $token")
 # Если cURL поддерживает файл доверия и нужен частный сертификат:
 # $common += @('--cacert', $env:TLM_PEM)
 

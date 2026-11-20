@@ -3,12 +3,12 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" format="Hierarchical" version="2.17">
 	<ConfigVersions>
 		<Metadata name="CommonModule.ТЛМ_Клиент" id="52f5a164-8d34-59a7-920a-3d12c8065232" configVersion="ff42cb17d9d72873483713e39e747c3708af68f6" />
-		<Metadata name="CommonModule.ТЛМ_Клиент.Module" id="52f5a164-8d34-59a7-920a-3d12c8065232.0" configVersion="594906fd9f53a532b9061e0a53fb7e84d1c56117" />
-		<Metadata name="Configuration.ТЛМ_Клиент" id="8813e755-abc9-5632-ba88-edf1b8d1baa8" configVersion="1ccce280fc50a34f7c742eafd0b4be6a5aa9762b" />
+		<Metadata name="CommonModule.ТЛМ_Клиент.Module" id="52f5a164-8d34-59a7-920a-3d12c8065232.0" configVersion="abb90d18414305593429d231cea1d5dce3e1f864" />
+		<Metadata name="Configuration.ТЛМ_Клиент" id="8813e755-abc9-5632-ba88-edf1b8d1baa8" configVersion="a8adc46eec3cd9296b9650ad159d7e99a39e5c0d" />
 		<Metadata name="Constant.ТЛМ_Клиент_АдресСервера" id="d3f7dd7c-6718-5b60-b062-a9bba9432c84" configVersion="010fccab39854412d9af4aa4a0b38df06a172098" />
 		<Metadata name="Constant.ТЛМ_Клиент_ПутьКСертификату" id="5de895f8-d33c-5508-a476-940bd3790de1" configVersion="92e334ffd80e4667b77c43c9413882bc915cb51a" />
 		<Metadata name="Constant.ТЛМ_Клиент_Таймаут" id="febf1b23-4ac7-5863-a905-16130ca99bdc" configVersion="c3db3f3bbdbe5f436475d3de2436df3301b03558" />
-		<Metadata name="Constant.ТЛМ_Клиент_Токен" id="0f3b1119-7788-5db6-b6fa-f12c218810b2" configVersion="fa8eb24fa2a3948a77ac11641c88cd9a895aee3a" />
+		<Metadata name="Constant.ТЛМ_Клиент_Токен" id="0f3b1119-7788-5db6-b6fa-f12c218810b2" configVersion="a9f62286cb958fa20edda7ff991bd85ad91263c6" />
 		<Metadata name="Language.Русский" id="89200dc3-151c-58ec-aedb-c2eb47d5162b" configVersion="48560732fc16a19e614260f04690417ec4272164" />
 		<Metadata name="Role.ТЛМ_АдминистраторКлиента" id="1b122e4e-4d12-5683-989a-f4de5831161e" configVersion="b1629bd82b1c5183b619a131c72bbba50464497f" />
 		<Metadata name="Role.ТЛМ_АдминистраторКлиента.Rights" id="1b122e4e-4d12-5683-989a-f4de5831161e.0" configVersion="f23a33753b6f64883689f47b1a5bb76cd27946ec" />

@@ -4,7 +4,7 @@
 	<ConfigVersions>
 		<Metadata name="CommonModule.ТЛМ_ПримерРасписания" id="1c8ede9e-b92a-547b-8e85-dfe10040dcb3" configVersion="fed16874eebe8adf38ce47a713d3d93cef7ced51" />
 		<Metadata name="CommonModule.ТЛМ_ПримерРасписания.Module" id="1c8ede9e-b92a-547b-8e85-dfe10040dcb3.0" configVersion="2060ccbe07e08fd6940c02a808abd50f80cd652b" />
-		<Metadata name="Configuration.ТЛМ_ПримерРасписания" id="b4549f8a-063e-5149-b8af-16500d2423a2" configVersion="2f67b2ecc92cea1ff4f9c514fbea43241b13f914" />
+		<Metadata name="Configuration.ТЛМ_ПримерРасписания" id="b4549f8a-063e-5149-b8af-16500d2423a2" configVersion="37df26db60e71b25196d28201bd71612c580fa2f" />
 		<Metadata name="Language.Русский" id="138d420f-1e10-5f65-9c74-53659cf3826a" configVersion="d7b00379b853c96d680c3f3fd459a53dd6baa3ef" />
 		<Metadata name="ScheduledJob.ТЛМ_ОтправкаПоРасписанию" id="5b37bb2f-df1e-5bc8-9eea-5b8270d5f420" configVersion="c7d9e12d0e2791bc81aaafa2c468cb6412eb4c5d" />
 	</ConfigVersions>
