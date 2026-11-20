@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from build_release import assemble
-from check_sources import CORE, COPY, MD, check_bsl, check_copyright
+from check_sources import CORE, COPY, MD, check_bsl, check_copyright, check_string_lengths
 from release_common import safe_path
 from verify_release import check_headers
 
@@ -50,6 +50,19 @@ class ReleaseTests(unittest.TestCase):
         ET.SubElement(item, CORE + "lang").text = "ru"
         ET.SubElement(item, CORE + "content").text = COPY
         check_copyright(properties, "Configuration.xml")
+
+    def test_metadata_string_lengths(self):
+        """Проверяет старый дескриптор 2048, граничную длину и неограниченную строку."""
+        properties = ET.Element(MD + "Properties")
+        qualifiers = ET.SubElement(properties, CORE + "StringQualifiers")
+        length = ET.SubElement(qualifiers, CORE + "Length")
+        for value in ("1025", "2048", "-1", ""):
+            length.text = value
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                check_string_lengths(properties, "Constant.xml")
+        for value in ("0", "1024"):
+            length.text = value
+            check_string_lengths(properties, "Constant.xml")
 
     def test_paths(self):
         """Отбрасывает переходы, разные разделители и неоднозначные пути."""

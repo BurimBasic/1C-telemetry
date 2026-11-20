@@ -89,6 +89,14 @@ def check_compatibility(properties, root):
             language, "основной язык должен быть заимствован с идентификатором базового русского языка")
 
 
+def check_string_lengths(metadata, path):
+    """Отбрасывает длинные ограниченные строки до обновления структуры базы."""
+    for qualifiers in metadata.iter(CORE + "StringQualifiers"):
+        length = qualifiers.findtext(CORE + "Length", "")
+        require(length.isdecimal() and int(length) <= 1024, path,
+                f"недопустимая ограниченная длина строки: {length!r}. Используйте 0 для неограниченной")
+
+
 def check_extension(root, component):
     """Сверяет версии, состав XML, UUID, роли, маршруты, модули и штатную справку."""
     conf = ET.parse(root / "Configuration.xml").getroot()[0]
@@ -115,6 +123,7 @@ def check_extension(root, component):
         xml = root / DIRECTORIES[kind] / f"{object_name}.xml"
         paths[name] = xml
         obj = ET.parse(xml).getroot()[0]
+        check_string_lengths(obj, xml)
         objects[name] = obj
         require(obj.findtext(f"{MD}Properties/{MD}Name") == object_name and obj.tag == MD + kind,
                 xml, "имя или тип не совпадает")
