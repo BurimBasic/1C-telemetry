@@ -1,0 +1,122 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "examples",
+  "extension_version": "1.0.4-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c",
+  "source_commit_tree": "7660852501edcf0093842b3f1edecf777cdd88e6",
+  "source_subtree": "503a181264e64430b70afa49c51461af6cdf5fc1",
+  "source_files": 12,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3768,
+      "sha1": "6c2283a1b6338b0ef2ba72bc2431ae57b866b12d"
+    },
+    {
+      "path": "bsl/НастройкаКлиента.bsl",
+      "size": 2699,
+      "sha1": "f849fe68e5ed6296dd07dbfc39a8fe49b4eecea8"
+    },
+    {
+      "path": "bsl/НастройкаСервера.bsl",
+      "size": 3486,
+      "sha1": "e4574e7adfd6fe9b508ff8112f026dbb23272c8a"
+    },
+    {
+      "path": "curl_examples.txt",
+      "size": 2551,
+      "sha1": "f601cc71b9934217fea4a9848c5f4f6ce9dbb1d0"
+    },
+    {
+      "path": "powershell/Send-Telemetry.ps1",
+      "size": 2991,
+      "sha1": "9b0b9447dde470ac13a56937d2542d50641fe3be"
+    },
+    {
+      "path": "python/send_telemetry.py",
+      "size": 3772,
+      "sha1": "5e7810d0f6c270c2c62c289fcd23eef30d2eddd0"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания.xml",
+      "size": 1337,
+      "sha1": "c2e337ec8f3b9209a83b77a1dd079fd86a5ec941"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания/Ext/Module.bsl",
+      "size": 1404,
+      "sha1": "1d2e5cc9a8b048d64b7d61e6ae904fe2748e4fbb"
+    },
+    {
+      "path": "schedule/ConfigDumpInfo.xml",
+      "size": 1169,
+      "sha1": "41823c3ca2a7c4a3564c94646b223c3d94cf04ea"
+    },
+    {
+      "path": "schedule/Configuration.xml",
+      "size": 3586,
+      "sha1": "8c9742aa5d1067cb21e86636716e0954b0999b88"
+    },
+    {
+      "path": "schedule/Languages/Русский.xml",
+      "size": 894,
+      "sha1": "adb707155de25602e5aa90bc6c9856861e0d3932"
+    },
+    {
+      "path": "schedule/ScheduledJobs/ТЛМ_ОтправкаПоРасписанию.xml",
+      "size": 1363,
+      "sha1": "7468b84fc3fac9f8bdc7506cc176173fab367674"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip",
+  "zip_size": 14378,
+  "sha256": "7f323238e95d538084cf21396d3749aea9f5b0e0fd4dc1db8bb674b607af252c",
+  "git_blob_sha1": "ce791cb59afc197d3c8d009c1517f11f61023079",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 12,
+    "entry_count": 12
+  },
+  "testing": [
+    {
+      "instrument": "Локальные тесты и проверка исходников",
+      "version": "Python 3.12",
+      "run_id": "W001-TOKEN-01",
+      "status": "PASS",
+      "detail": "11 тестов, XML/BSL, версии, проверки токена и справки.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "structural",
+      "run_id": "W001-TOKEN-02",
+      "status": "PASS",
+      "detail": "15 проверок на каждое расширение, 13 на образец.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "Целевая 1С CheckConfig и стендовая приёмка",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Установка новой версии и обработка запросов недоступны с текущими правами. Тестовая публикация возвращает Basic challenge до обработчика.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "PowerShell parse and token encoding",
+      "version": "Windows PowerShell 5.1",
+      "run_id": "W001-TOKEN-04",
+      "status": "PASS",
+      "detail": "Синтаксис скрипта PowerShell и примеров cURL, фактическое кодирование 123, одного символа, спецсимволов, Unicode и пробелов.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}
