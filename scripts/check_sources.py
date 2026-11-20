@@ -76,6 +76,19 @@ def check_copyright(properties, path):
             path, "Copyright должен содержать русский текст авторства")
 
 
+def check_compatibility(properties, root):
+    """Проверяет контролируемые свойства для целевого профиля 1С."""
+    require(properties.findtext(MD + "DefaultLanguage") == "Language.Русский"
+            and properties.findtext(MD + "InterfaceCompatibilityMode") == "TaxiEnableVersion8_2",
+            root, "неверный основной язык или режим совместимости интерфейса")
+    language = root / "Languages/Русский.xml"
+    meta = ET.parse(language).getroot()[0].find(MD + "Properties")
+    require(meta.findtext(MD + "ObjectBelonging") == "Adopted"
+            and meta.findtext(MD + "LanguageCode") == "ru"
+            and meta.findtext(MD + "ExtendedConfigurationObject") == "db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e",
+            language, "основной язык должен быть заимствован с идентификатором базового русского языка")
+
+
 def check_extension(root, component):
     """Сверяет версии, состав XML, UUID, роли, маршруты, модули и штатную справку."""
     conf = ET.parse(root / "Configuration.xml").getroot()[0]
@@ -85,6 +98,7 @@ def check_extension(root, component):
     require(version == properties.findtext(MD + "Version") == build["extension_version"]
             and build["component"] == component, root, "расхождение версий")
     check_copyright(properties, root / "Configuration.xml")
+    check_compatibility(properties, root)
     require(COPY in properties.findtext(MD + "Comment"), root, "авторство в Comment")
     require(properties.findtext(MD + "ConfigurationExtensionPurpose") == "AddOn"
             and properties.findtext(MD + "NamePrefix") == "ТЛМ_", root, "назначение или префикс")
@@ -94,7 +108,9 @@ def check_extension(root, component):
     paths = {"Configuration." + properties.findtext(MD + "Name"): root / "Configuration.xml"}
     for child in conf.find(MD + "ChildObjects"):
         kind, object_name = child.tag.removeprefix(MD), child.text
-        require(kind in TYPES[component] and object_name.startswith("ТЛМ_"), root, f"лишний объект {object_name}")
+        standard_language = kind == "Language" and object_name == "Русский"
+        require(kind in TYPES[component] and (standard_language or object_name.startswith("ТЛМ_")),
+                root, f"лишний объект {object_name}")
         name = f"{kind}.{object_name}"
         xml = root / DIRECTORIES[kind] / f"{object_name}.xml"
         paths[name] = xml
@@ -103,7 +119,7 @@ def check_extension(root, component):
         require(obj.findtext(f"{MD}Properties/{MD}Name") == object_name and obj.tag == MD + kind,
                 xml, "имя или тип не совпадает")
         for item in obj.iter():
-            require(item.tag != MD + "ExtendedConfigurationObject", xml, "заимствованный объект")
+            require(standard_language or item.tag != MD + "ExtendedConfigurationObject", xml, "заимствованный объект")
             if "uuid" in item.attrib:
                 identity = UUID(item.attrib["uuid"])
                 require(identity not in ids, xml, "неуникальный UUID")
@@ -171,7 +187,9 @@ if __name__ == "__main__":
         check_extension(Path("src/onec") / target, target)
     if len(sys.argv) == 1:
         example = Path("examples/schedule/Configuration.xml")
-        check_copyright(ET.parse(example).getroot()[0].find(MD + "Properties"), example)
+        props = ET.parse(example).getroot()[0].find(MD + "Properties")
+        check_copyright(props, example)
+        check_compatibility(props, example.parent)
 
 # 1C-telemetry. Конец check_sources.py.
 # Copyright © 2026 Тарасов Роман Олегович. Все права защищены.

@@ -7,8 +7,8 @@
 			<Metadata name="Catalog.ТЛМ_Клиенты.Attribute.ХешТокена" id="a3f7e53d-23ca-53ec-bf01-deeb6375dee4" />
 		</Metadata>
 		<Metadata name="CommonModule.ТЛМ_Сервер" id="907e9279-ac5c-5681-80a2-5da2bb07dded" configVersion="a111f8b92682a33ddcaeaed30a3ffa8ed126811f" />
-		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="45629aa297c84c4e3ad61f03b8d360b46d8717a6" />
-		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="5c651ffff01032a506c413d0fe528701f8705b0e" />
+		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="6f095959ee40b6acb230ffa2e088f4134a53cae5" />
+		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="4f4df33e804875ca48227b6c0076781228fa963d" />
 		<Metadata name="Constant.ТЛМ_Сервер_КаталогФайлов" id="0bb77d10-1c11-52f9-b7ac-623379900a6d" configVersion="55b2588056d841db59cc62e01476521332f124e4" />
 		<Metadata name="Constant.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" id="8fcd8815-e872-51e5-97c1-313fc1857844" configVersion="9f3b0a3f609796d94f3ebe9a99a1f2bca0dca6f0" />
 		<Metadata name="HTTPService.ТЛМ_ПриемДанных" id="c8308973-55e6-5e93-951f-ba04764141e4" configVersion="9252bbcca9847e04a6467b96c4bd439d82b42d24">
@@ -34,7 +34,7 @@
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.РазмерБайт" id="e33d0977-3fa6-5eca-8003-d6ab083899f6" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.ОтносительныйПуть" id="30e3f1fb-6180-56ab-8475-b1ec1a287fad" />
 		</Metadata>
-		<Metadata name="Language.ТЛМ_РусскийЯзыкСервера" id="73047e43-73fc-5244-bd51-0b57bc3fa00e" configVersion="49f4f23f0adc7c40371ba96e91ab5fedb1bd407c" />
+		<Metadata name="Language.Русский" id="73047e43-73fc-5244-bd51-0b57bc3fa00e" configVersion="0cce66da4ba13acf46211465849651d346cc2f4d" />
 		<Metadata name="Role.ТЛМ_АдминистраторСервера" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a" configVersion="bf74fb476bb81b43dfb4d3de67c7820fa049b63f" />
 		<Metadata name="Role.ТЛМ_АдминистраторСервера.Rights" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a.0" configVersion="50911b0dba60f6250fa25a34ff13e6e1380ebbc0" />
 		<Metadata name="Role.ТЛМ_ПриемТелеметрии" id="981308ff-d229-533b-aaa5-c302cf42d43c" configVersion="620d375555f7c2662b73f1aff1bb64ef16f91be3" />

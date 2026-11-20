@@ -53,18 +53,18 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles />
 			<Vendor>Тарасов Роман Олегович</Vendor>
-			<Version>1.0.1-dev</Version>
-			<DefaultLanguage>Language.ТЛМ_РусскийЯзыкКлиента</DefaultLanguage>
+			<Version>1.0.2-dev</Version>
+			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<Copyright>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Copyright © 2026 Тарасов Роман Олегович. Все права защищены.</v8:content>
 				</v8:item>
 			</Copyright>
-			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
+			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
 		</Properties>
 		<ChildObjects>
-			<Language>ТЛМ_РусскийЯзыкКлиента</Language>
+			<Language>Русский</Language>
 			<Subsystem>ТЛМ_СправкаКлиента</Subsystem>
 			<Role>ТЛМ_ОтправкаТелеметрии</Role>
 			<Role>ТЛМ_АдминистраторКлиента</Role>
