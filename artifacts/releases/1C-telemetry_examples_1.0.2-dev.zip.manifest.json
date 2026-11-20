@@ -1,0 +1,112 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "examples",
+  "extension_version": "1.0.2-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "8f7ac3f892319f8c6ce78c817455a513ae7db550",
+  "source_commit_tree": "f5db9fa2b4d226e3e901b137b1d9cceef1b02c72",
+  "source_subtree": "088be150465ca1eab1440a6140f6750ac35130c3",
+  "source_files": 12,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3649,
+      "sha1": "8cd725558b557ead7ded9721e735fafdc22caf2d"
+    },
+    {
+      "path": "bsl/НастройкаКлиента.bsl",
+      "size": 2699,
+      "sha1": "f849fe68e5ed6296dd07dbfc39a8fe49b4eecea8"
+    },
+    {
+      "path": "bsl/НастройкаСервера.bsl",
+      "size": 3020,
+      "sha1": "dda164314fac5be35c1e7d29cb63db602caada4a"
+    },
+    {
+      "path": "curl_examples.txt",
+      "size": 2161,
+      "sha1": "c5622ecdb69fe3698a64002c2b0989e71d994028"
+    },
+    {
+      "path": "powershell/Send-Telemetry.ps1",
+      "size": 2724,
+      "sha1": "09728bf53c0af777af50b7761d83125ffe9313e0"
+    },
+    {
+      "path": "python/send_telemetry.py",
+      "size": 3780,
+      "sha1": "f8eb2b1a13bd36993e11f259f8e2efacb2644ae0"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания.xml",
+      "size": 1337,
+      "sha1": "c2e337ec8f3b9209a83b77a1dd079fd86a5ec941"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания/Ext/Module.bsl",
+      "size": 1404,
+      "sha1": "1d2e5cc9a8b048d64b7d61e6ae904fe2748e4fbb"
+    },
+    {
+      "path": "schedule/ConfigDumpInfo.xml",
+      "size": 1169,
+      "sha1": "a1a4271b191b7a69b075f714887aa9a675557dff"
+    },
+    {
+      "path": "schedule/Configuration.xml",
+      "size": 3586,
+      "sha1": "2a3a5b28d75d7613d7dc428b259b556cbd45c926"
+    },
+    {
+      "path": "schedule/Languages/Русский.xml",
+      "size": 894,
+      "sha1": "adb707155de25602e5aa90bc6c9856861e0d3932"
+    },
+    {
+      "path": "schedule/ScheduledJobs/ТЛМ_ОтправкаПоРасписанию.xml",
+      "size": 1363,
+      "sha1": "7468b84fc3fac9f8bdc7506cc176173fab367674"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_examples_1.0.2-dev.zip",
+  "zip_size": 14071,
+  "sha256": "327cfb08b2d2f5a0c4c6af0ee95afeafeed50316d6f60387d344e215c983c162",
+  "git_blob_sha1": "a9bc11f10a3192575127df101a56852a21c96e60",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 12,
+    "entry_count": 12
+  },
+  "testing": [
+    {
+      "instrument": "Сверка с метаданными применённого дополнения",
+      "version": "1C 8.3.27, целевая ИБ",
+      "run_id": "W001-COMPAT-01",
+      "status": "PASS",
+      "detail": "Совпали DefaultLanguage, режимы совместимости, заимствование и UUID основного языка",
+      "source_commit": "8f7ac3f892319f8c6ce78c817455a513ae7db550"
+    },
+    {
+      "instrument": "Тесты Python и проверка исходников",
+      "version": "Python 3.12",
+      "run_id": "W001-COMPAT-02",
+      "status": "PASS",
+      "source_commit": "8f7ac3f892319f8c6ce78c817455a513ae7db550"
+    },
+    {
+      "instrument": "Применение расширения / CheckConfig",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "source_commit": "8f7ac3f892319f8c6ce78c817455a513ae7db550"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}
