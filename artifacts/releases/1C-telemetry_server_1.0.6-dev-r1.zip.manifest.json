@@ -1,0 +1,180 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "server",
+  "extension_version": "1.0.6-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "9d4fd720bb867e55356a69d5c38010b1f865f862",
+  "source_commit_tree": "43a67d13ce11b0050a0fcb17b6765b9b553636ce",
+  "source_subtree": "d533bed8bf8609d8f8fca658976c793c9d9bfc19",
+  "source_files": 22,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "4144cc58121475571c3db2546b6e1635973b9d20"
+    },
+    {
+      "path": "Catalogs/ТЛМ_Клиенты.xml",
+      "size": 3840,
+      "sha1": "0207e54f31dbd1d51d1635e3e86733a407555bb1"
+    },
+    {
+      "path": "Catalogs/ТЛМ_Клиенты/Ext/ObjectModule.bsl",
+      "size": 1031,
+      "sha1": "f423abf7ee33c0a5226cc7f73a0a81ec9aa22752"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Сервер.xml",
+      "size": 1255,
+      "sha1": "c90cc057168b96f6c8706b4bf0a03e23fc241a7b"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Сервер/Ext/Module.bsl",
+      "size": 27035,
+      "sha1": "ced747e176df7e04612de63a1dc47fdfc5bd6ac4"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 5821,
+      "sha1": "254caea06537d29987a71fa0e7a900a3a6f222e3"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 4072,
+      "sha1": "5780a80637aebe203a82c074fcf12eb437b62596"
+    },
+    {
+      "path": "Constants/ТЛМ_Сервер_КаталогФайлов.xml",
+      "size": 2158,
+      "sha1": "dcdabf72732d6b09edc053f3916933781708e5e5"
+    },
+    {
+      "path": "Constants/ТЛМ_Сервер_МаксимальныйРазмерJSONМБ.xml",
+      "size": 2230,
+      "sha1": "092fe6e77ad52483df33e23fccd33bd1af2000b0"
+    },
+    {
+      "path": "HTTPServices/ТЛМ_ПриемДанных.xml",
+      "size": 3209,
+      "sha1": "4bd2ee49c63211bde950940b47a3db435c6ccf2a"
+    },
+    {
+      "path": "HTTPServices/ТЛМ_ПриемДанных/Ext/Module.bsl",
+      "size": 1722,
+      "sha1": "d2ac85be23bb02917f0b28ec399164026017ff4d"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеJSON.xml",
+      "size": 5502,
+      "sha1": "25075830ce13ee28069d5900b6163f2ba592ca4e"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеФайлы.xml",
+      "size": 6870,
+      "sha1": "01f7572eb13ce9c14906fc4f103bff53be24d088"
+    },
+    {
+      "path": "Languages/Русский.xml",
+      "size": 894,
+      "sha1": "d87118f0b5793c848b39e6a291aacf83eb9a03c5"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторСервера.xml",
+      "size": 950,
+      "sha1": "91e8075ea2e1ba7ea360628a8bfdb4f5bc2b50b3"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторСервера/Ext/Rights.xml",
+      "size": 1717,
+      "sha1": "3a895ea0f338243e776cc7f2cb316958eaaf3ecc"
+    },
+    {
+      "path": "Roles/ТЛМ_ПриемТелеметрии.xml",
+      "size": 961,
+      "sha1": "f4cdd32e20bd8f6ff8fcfc867d7165837f4d68a8"
+    },
+    {
+      "path": "Roles/ТЛМ_ПриемТелеметрии/Ext/Rights.xml",
+      "size": 1916,
+      "sha1": "2041ed2338525da3deb0fa8823e6d31ae030c8ad"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера.xml",
+      "size": 1130,
+      "sha1": "82ec6adba14895f31b8bb87cdd71f7d78e349256"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера/Ext/Help/ru.html",
+      "size": 1803,
+      "sha1": "4c3bbe001f33b226a52e065b6e8fbd2f9d708a2d"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "7479347817e04dba76b66c091f50978d14894316"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_server_1.0.6-dev-r1.zip",
+  "zip_size": 27818,
+  "sha256": "d40152edfd95ea64e27559c3fe4f83e252049fddc623c290a6bdff239f367a97",
+  "git_blob_sha1": "07c4959c9fef2db7c1289b5d7cbdf097c8a4e4bc",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 22,
+    "entry_count": 22
+  },
+  "testing": [
+    {
+      "instrument": "Проверка исходников и локальная регрессия",
+      "version": "Python 3.12.14",
+      "run_id": "W001-TOKEN-UI-01",
+      "status": "PASS",
+      "detail": "11 тестов, версии и локальный HTTPS.",
+      "source_commit": "9d4fd720bb867e55356a69d5c38010b1f865f862"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "structural",
+      "run_id": "W001-TOKEN-UI-02",
+      "status": "PASS",
+      "detail": "15 структурных проверок серверного расширения.",
+      "source_commit": "9d4fd720bb867e55356a69d5c38010b1f865f862"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "5633ce29562b1af94cddbd2c0238a7c4",
+      "status": "PASS",
+      "detail": "Синтаксис общего модуля в контекстах Server и ExternalConnection.",
+      "source_commit": "9d4fd720bb867e55356a69d5c38010b1f865f862"
+    },
+    {
+      "instrument": "Внешний ping с Windows",
+      "version": "cURL / SLOW1",
+      "run_id": "W001-TOKEN-UI-03",
+      "status": "FAIL",
+      "detail": "Публикация отвечает 401 с WWW-Authenticate: Basic и пустым телом. Выполнение HTTP-обработчика телеметрии не установлено.",
+      "source_commit": "9d4fd720bb867e55356a69d5c38010b1f865f862"
+    },
+    {
+      "instrument": "Отображение карточки на целевой 1С",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Ожидается применение ZIP. Настройка записи кода запрещает установку через текущее подключение.",
+      "source_commit": "9d4fd720bb867e55356a69d5c38010b1f865f862"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}
