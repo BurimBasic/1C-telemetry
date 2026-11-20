@@ -1,0 +1,32 @@
+# 1C-telemetry. Команды cURL 7.76+ для Windows PowerShell.
+# Copyright © 2026 Тарасов Роман Олегович. Все права защищены.
+# TLM_URL и TLM_TOKEN задаются в окружении. Перед запуском проверьте доверие Windows.
+$base = $env:TLM_URL.TrimEnd('/')
+$common = @('-q','--silent','--show-error','--fail-with-body','--proto','=https','--max-time','60','-H',"X-Token: $env:TLM_TOKEN")
+# Если cURL поддерживает файл доверия и нужен частный сертификат:
+# $common += @('--cacert', $env:TLM_PEM)
+
+# Запускайте эти три примера по одному. $LASTEXITCODE должен быть равен 0.
+# Примените проверку ответа из следующего блока сразу после выбранной команды.
+# Ping, ожидается 200:
+$expected = 200
+$reply = curl.exe @common -w "`n%{http_code}" "$base/ping"
+# JSON, ожидается 201:
+$expected = 201
+$reply = curl.exe @common -w "`n%{http_code}" -H 'Content-Type: application/json' --data-binary '@report.json' "$base/json"
+# Файл, ожидается 201. Имя кодируется в URL, тело — исходный файл:
+$expected = 201
+$name = [Uri]::EscapeDataString('отчёт.txt')
+$reply = curl.exe @common -w "`n%{http_code}" -H 'Content-Type: application/octet-stream' --data-binary '@отчёт.txt' "$base/file?name=$name"
+
+# Проверка статуса и прикладного ответа выбранной команды:
+if ($LASTEXITCODE -ne 0 -or [int]$reply[-1] -ne $expected) { throw 'Операция не подтверждена.' }
+$body = ($reply[0..($reply.Count-2)] -join "`n") | ConvertFrom-Json
+if ($body.ok -isnot [bool] -or -not $body.ok -or ($expected -eq 201 -and
+    $body.id -notmatch '^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$')) {
+    throw 'Некорректный ответ сервиса.'
+}
+$body.id
+
+# 1C-telemetry. Конец curl_examples.txt.
+# Copyright © 2026 Тарасов Роман Олегович. Все права защищены.
