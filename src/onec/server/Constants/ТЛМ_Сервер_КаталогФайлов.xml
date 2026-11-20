@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="0bb77d10-1c11-52f9-b7ac-623379900a6d">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Сервер_КаталогФайлов" category="Manager">
+				<xr:TypeId>6a8d9af0-fe6d-5dcb-9d43-31b84b161480</xr:TypeId>
+				<xr:ValueId>449cbd56-5d29-5488-85eb-e6f08431c9cb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Сервер_КаталогФайлов" category="ValueManager">
+				<xr:TypeId>dedd07bf-e864-52fa-bdcf-39efd0f582bb</xr:TypeId>
+				<xr:ValueId>3fe9c801-8a40-54ad-b67b-375822f5992f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Сервер_КаталогФайлов" category="ValueKey">
+				<xr:TypeId>3d642d35-a04f-5608-84f7-55b9431fca28</xr:TypeId>
+				<xr:ValueId>f411eec0-ffca-528e-b861-568097b0f6f9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Сервер_КаталогФайлов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог файлов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Абсолютный каталог вне веб-публикации.</Comment>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>2048</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<PasswordMode>false</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="83fbad82-d716-5334-9ce3-07ad531d28d4">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ТЛМ_ПолученныеФайлы" category="Record">
+				<xr:TypeId>8b4724ab-8ae4-5d35-a094-aea8e95d255a</xr:TypeId>
+				<xr:ValueId>0e3fd9c0-6f83-5d46-b2af-5cb102a45251</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ТЛМ_ПолученныеФайлы" category="Manager">
+				<xr:TypeId>45d2c94c-f3a3-5809-80c9-5ed71b212491</xr:TypeId>
+				<xr:ValueId>7956e61c-fc38-59f1-a80b-6a140373a3b3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ТЛМ_ПолученныеФайлы" category="Selection">
+				<xr:TypeId>41d28ecf-db50-5348-a06d-e787ced8ce9e</xr:TypeId>
+				<xr:ValueId>a4cefd71-5a56-53d9-9587-17e15bac4fc2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ТЛМ_ПолученныеФайлы" category="List">
+				<xr:TypeId>b7a621b9-ee6a-550e-877f-52d5c88b842e</xr:TypeId>
+				<xr:ValueId>d29a1952-067c-5b37-9648-7e99851a0dd8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ТЛМ_ПолученныеФайлы" category="RecordSet">
+				<xr:TypeId>86858879-2e67-5df9-a4a1-71e7139236af</xr:TypeId>
+				<xr:ValueId>49d1fd08-a0e0-547a-9d10-251871cd3972</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ТЛМ_ПолученныеФайлы" category="RecordKey">
+				<xr:TypeId>808b94db-0f5b-58a9-ae26-565a231aebd6</xr:TypeId>
+				<xr:ValueId>f53c5867-06aa-5ab5-bce9-21f1c30ebe72</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ТЛМ_ПолученныеФайлы" category="RecordManager">
+				<xr:TypeId>6eacefa5-384c-521c-a4fe-7ee9c67383ec</xr:TypeId>
+				<xr:ValueId>c23d380a-c566-5c1b-bdd9-5df85114a3e6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_ПолученныеФайлы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полученные файлы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>История по клиенту и UUID.</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<EditType>InDialog</EditType>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="2036dcae-286e-599e-8b9e-5269a1e1ad4a">
+				<Properties>
+					<Name>Клиент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Клиент</Comment>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТЛМ_Клиенты</v8:Type>
+					</Type>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="8f497d58-afec-5168-84aa-d62b46e293c6">
+				<Properties>
+					<Name>ИдентификаторСообщения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>UUID сообщения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>UUID сообщения</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>Index</Indexing>
+				</Properties>
+			</Dimension>
+			<Resource uuid="f8783bb4-7cd9-583c-bd70-e6d37bb912a1">
+				<Properties>
+					<Name>ДатаПолучения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения (UTC)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Дата получения (UTC)</Comment>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+					<Indexing>Index</Indexing>
+				</Properties>
+			</Resource>
+			<Resource uuid="0de850f7-6c9d-562a-ad00-857972fcd23c">
+				<Properties>
+					<Name>ОригинальноеИмя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходное имя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Исходное имя</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Resource uuid="e33d0977-3fa6-5eca-8003-d6ab083899f6">
+				<Properties>
+					<Name>РазмерБайт</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер в байтах</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Размер в байтах</Comment>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Resource uuid="30e3f1fb-6180-56ab-8475-b1ec1a287fad">
+				<Properties>
+					<Name>ОтносительныйПуть</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Относительный путь</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Относительный путь</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>64</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

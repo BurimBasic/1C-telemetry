@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="8fcd8815-e872-51e5-97c1-313fc1857844">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" category="Manager">
+				<xr:TypeId>f67cae2c-bac9-5794-9e36-67fd1d6d99b5</xr:TypeId>
+				<xr:ValueId>3f9f3c85-fb2b-5528-ba14-d30ba2986739</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" category="ValueManager">
+				<xr:TypeId>ca4467fe-a3cf-5c3e-81b9-41446ed299de</xr:TypeId>
+				<xr:ValueId>b1d8d5e2-2a87-5406-b528-b14d7614abf9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" category="ValueKey">
+				<xr:TypeId>9c2f877d-79c4-55df-83c8-47ab5074000e</xr:TypeId>
+				<xr:ValueId>7f793064-45b3-51b7-b46d-091d7ec9ec98</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Сервер_МаксимальныйРазмерJSONМБ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лимит JSON (МиБ)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Ноль означает 10 МиБ.</Comment>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<PasswordMode>false</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>
