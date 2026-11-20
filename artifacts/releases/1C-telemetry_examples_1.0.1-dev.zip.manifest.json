@@ -1,0 +1,112 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "examples",
+  "extension_version": "1.0.1-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750",
+  "source_commit_tree": "2579afd5ebb53404da5ee8fe1f83004d857b78f8",
+  "source_subtree": "33eb212359b6a55277cb37defa4ed90256292a5a",
+  "source_files": 12,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3649,
+      "sha1": "8cd725558b557ead7ded9721e735fafdc22caf2d"
+    },
+    {
+      "path": "bsl/НастройкаКлиента.bsl",
+      "size": 2699,
+      "sha1": "f849fe68e5ed6296dd07dbfc39a8fe49b4eecea8"
+    },
+    {
+      "path": "bsl/НастройкаСервера.bsl",
+      "size": 3020,
+      "sha1": "dda164314fac5be35c1e7d29cb63db602caada4a"
+    },
+    {
+      "path": "curl_examples.txt",
+      "size": 2161,
+      "sha1": "c5622ecdb69fe3698a64002c2b0989e71d994028"
+    },
+    {
+      "path": "powershell/Send-Telemetry.ps1",
+      "size": 2724,
+      "sha1": "09728bf53c0af777af50b7761d83125ffe9313e0"
+    },
+    {
+      "path": "python/send_telemetry.py",
+      "size": 3780,
+      "sha1": "f8eb2b1a13bd36993e11f259f8e2efacb2644ae0"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания.xml",
+      "size": 1337,
+      "sha1": "c2e337ec8f3b9209a83b77a1dd079fd86a5ec941"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания/Ext/Module.bsl",
+      "size": 1404,
+      "sha1": "1d2e5cc9a8b048d64b7d61e6ae904fe2748e4fbb"
+    },
+    {
+      "path": "schedule/ConfigDumpInfo.xml",
+      "size": 1198,
+      "sha1": "d022cfc83f5d0a106f99235cc182705d32989a80"
+    },
+    {
+      "path": "schedule/Configuration.xml",
+      "size": 3628,
+      "sha1": "09629b574c6211732a80a0fdb163a0f9757683b0"
+    },
+    {
+      "path": "schedule/Languages/ТЛМ_РусскийЯзыкПримера.xml",
+      "size": 942,
+      "sha1": "4b169fdaf29137d9cebaea4ce91f258bd2190d49"
+    },
+    {
+      "path": "schedule/ScheduledJobs/ТЛМ_ОтправкаПоРасписанию.xml",
+      "size": 1363,
+      "sha1": "7468b84fc3fac9f8bdc7506cc176173fab367674"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_examples_1.0.1-dev.zip",
+  "zip_size": 14160,
+  "sha256": "80271b164626844c5368f1176319881865ec4e922e3e6eb5c2a02a08255ec803",
+  "git_blob_sha1": "a4a61a604b5d77d1c90ab18a8f912c111fec7688",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 12,
+    "entry_count": 12
+  },
+  "testing": [
+    {
+      "instrument": "XSD LocalStringType (Copyright)",
+      "version": "2.17, lxml",
+      "run_id": "W001-XDTO-01",
+      "status": "PASS",
+      "detail": "Исходный строковый Copyright отвергнут, локализованный Copyright принят",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    },
+    {
+      "instrument": "Тесты Python и проверка исходников",
+      "version": "Python 3.12",
+      "run_id": "W001-XDTO-02",
+      "status": "PASS",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    },
+    {
+      "instrument": "Штатный импорт / CheckConfig",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}
