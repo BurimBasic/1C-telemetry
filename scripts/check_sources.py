@@ -11,6 +11,7 @@ from uuid import UUID
 
 COPY = "Copyright © 2026 Тарасов Роман Олегович. Все права защищены."
 MD = "{http://v8.1c.ru/8.3/MDClasses}"
+CORE = "{http://v8.1c.ru/8.1/data/core}"
 TYPES = {
     "client": {"Language", "Subsystem", "Role", "CommonModule", "Constant"},
     "server": {"Language", "Subsystem", "Role", "CommonModule", "HTTPService",
@@ -63,6 +64,18 @@ def check_bsl(source, path):
     return names
 
 
+def check_copyright(properties, path):
+    """Проверяет LocalStringType, которое Конфигуратор ожидает в Copyright."""
+    copyright = properties.find(MD + "Copyright")
+    path_to_russian = CORE + "item"
+    require(copyright is not None and not (copyright.text or "").strip()
+            and len(copyright) == 1, path, "Copyright должен быть LocalStringType")
+    item = copyright.find(path_to_russian)
+    require(item is not None and item.findtext(CORE + "lang") == "ru"
+            and item.findtext(CORE + "content") == COPY,
+            path, "Copyright должен содержать русский текст авторства")
+
+
 def check_extension(root, component):
     """Сверяет версии, состав XML, UUID, роли, маршруты, модули и штатную справку."""
     conf = ET.parse(root / "Configuration.xml").getroot()[0]
@@ -71,8 +84,8 @@ def check_extension(root, component):
     build = json.loads((root / "BUILD_STATUS.json").read_bytes())
     require(version == properties.findtext(MD + "Version") == build["extension_version"]
             and build["component"] == component, root, "расхождение версий")
-    require(COPY == properties.findtext(MD + "Copyright") and COPY in properties.findtext(MD + "Comment"),
-            root, "свойства авторства расширения")
+    check_copyright(properties, root / "Configuration.xml")
+    require(COPY in properties.findtext(MD + "Comment"), root, "авторство в Comment")
     require(properties.findtext(MD + "ConfigurationExtensionPurpose") == "AddOn"
             and properties.findtext(MD + "NamePrefix") == "ТЛМ_", root, "назначение или префикс")
     modules = {}
@@ -156,6 +169,9 @@ def check_extension(root, component):
 if __name__ == "__main__":
     for target in sys.argv[1:] or TYPES:
         check_extension(Path("src/onec") / target, target)
+    if len(sys.argv) == 1:
+        example = Path("examples/schedule/Configuration.xml")
+        check_copyright(ET.parse(example).getroot()[0].find(MD + "Properties"), example)
 
 # 1C-telemetry. Конец check_sources.py.
 # Copyright © 2026 Тарасов Роман Олегович. Все права защищены.

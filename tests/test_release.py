@@ -4,13 +4,14 @@
 import io
 import sys
 import unittest
+import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from build_release import assemble
-from check_sources import COPY, check_bsl
+from check_sources import CORE, COPY, MD, check_bsl, check_copyright
 from release_common import safe_path
 from verify_release import check_headers
 
@@ -36,6 +37,19 @@ class ReleaseTests(unittest.TestCase):
             damaged[7] = 0
             with self.assertRaises(ValueError):
                 check_headers(damaged, archive.infolist())
+
+    def test_copyright_local_string(self):
+        """Воспроизводит ошибку импорта простого текста вместо LocalStringType."""
+        properties = ET.Element(MD + "Properties")
+        copyright = ET.SubElement(properties, MD + "Copyright")
+        copyright.text = COPY
+        with self.assertRaises(ValueError):
+            check_copyright(properties, "Configuration.xml")
+        copyright.text = None
+        item = ET.SubElement(copyright, CORE + "item")
+        ET.SubElement(item, CORE + "lang").text = "ru"
+        ET.SubElement(item, CORE + "content").text = COPY
+        check_copyright(properties, "Configuration.xml")
 
     def test_paths(self):
         """Отбрасывает переходы, разные разделители и неоднозначные пути."""

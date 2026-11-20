@@ -53,9 +53,14 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles />
 			<Vendor>Тарасов Роман Олегович</Vendor>
-			<Version>1.0.0-dev</Version>
+			<Version>1.0.1-dev</Version>
 			<DefaultLanguage>Language.ТЛМ_РусскийЯзыкСервера</DefaultLanguage>
-			<Copyright>Copyright © 2026 Тарасов Роман Олегович. Все права защищены.</Copyright>
+			<Copyright>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Copyright © 2026 Тарасов Роман Олегович. Все права защищены.</v8:content>
+				</v8:item>
+			</Copyright>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 		</Properties>
 		<ChildObjects>
