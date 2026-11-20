@@ -1,0 +1,7 @@
+{
+  "extension_version": "1.0.0-dev",
+  "component": "client",
+  "status": "TEST",
+  "checkconfig": "NOT_RUN",
+  "runtime_acceptance": "NOT_RUN"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="5de895f8-d33c-5508-a476-940bd3790de1">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Клиент_ПутьКСертификату" category="Manager">
+				<xr:TypeId>d21200ae-22f3-5a06-9e9b-d298619debe9</xr:TypeId>
+				<xr:ValueId>2c64d32e-d498-5aa0-806e-453b3050c888</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Клиент_ПутьКСертификату" category="ValueManager">
+				<xr:TypeId>8f233187-b886-5658-beed-1b7cbdf382db</xr:TypeId>
+				<xr:ValueId>2c47152f-8e19-5597-b2fd-ba906b76a670</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Клиент_ПутьКСертификату" category="ValueKey">
+				<xr:TypeId>696bb12f-07da-5a13-8146-4edbcf0c5410</xr:TypeId>
+				<xr:ValueId>2836daf1-230c-53f3-8bca-00798ff69ffc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиент_ПутьКСертификату</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к сертификату</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Публичный PEM на машине исполнения 1С.</Comment>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>2048</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<PasswordMode>false</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>

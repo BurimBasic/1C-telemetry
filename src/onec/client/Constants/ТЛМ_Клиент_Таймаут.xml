@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="febf1b23-4ac7-5863-a905-16130ca99bdc">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Клиент_Таймаут" category="Manager">
+				<xr:TypeId>5ea303df-e3bb-5c93-bf65-474618fc8202</xr:TypeId>
+				<xr:ValueId>4fcafce4-7f6b-51d0-a953-bd3d438bd571</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Клиент_Таймаут" category="ValueManager">
+				<xr:TypeId>5c1bd040-3704-5487-908a-a905d2e64de3</xr:TypeId>
+				<xr:ValueId>388454f4-4150-5523-9b6f-f111d2837a0b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Клиент_Таймаут" category="ValueKey">
+				<xr:TypeId>78bf6afd-6209-51a4-b3e9-ef17268d685e</xr:TypeId>
+				<xr:ValueId>53cb9320-55ad-58cc-b25e-4f9ea43140c9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиент_Таймаут</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут (сек.)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Ноль означает 60 секунд.</Comment>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<PasswordMode>false</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>
