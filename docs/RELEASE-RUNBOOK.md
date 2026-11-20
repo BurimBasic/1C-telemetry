@@ -23,4 +23,17 @@
 Обязанность автора: README вверху показывает последнюю версию клиента/сервера, статус, дату, прямые ссылки на ZIP (immutable SHA URL https://github.com/BurimBasic/1C-telemetry/raw/<RELEASE_COMMIT_SHA>/artifacts/releases/<ZIP>), манифест/хеши, GitHub Release если создан, тесты и ограничения. CHANGELOG сохраняет всю историю. Инструкции и acceptance report рядом. Не ссылаться на main как неизменяемый артефакт, не выдумывать sandbox URL. В ответе владельцу всегда повторять проверенные ссылки на оба текущих ZIP, даже если изменился только один. Если релиза нет — явно указать.
 
 
+## Сборка опубликованного TEST комплекта
+
+Python 3.12.14, Git и zlib. Для точного воспроизведения используйте версию zlib среды первой сборки, указанную в отчёте. Параметр `--evidence` принимает JSON-массив `testing` из соответствующего манифеста, а для примеров передаётся `--version`.
+
+```sh
+python scripts/build_release.py server "$SOURCE_SHA" --evidence evidence.json
+python scripts/build_release.py client "$SOURCE_SHA" --evidence evidence.json
+python scripts/build_release.py examples "$SOURCE_SHA" --version 1.0.0-dev --evidence evidence.json
+python scripts/verify_release.py artifacts/releases/*.zip
+```
+
+Для каждой команды используйте SHA и отчёт именно её компонента. SHA должен существовать как коммит Git. Скрипт откажется заменить файл другими байтами. При обновлении XML/BSL сверяйте соответствующие строки `configVersion` в `ConfigDumpInfo.xml` с SHA-1 байтов изменённого файла. Проверка архивов повторно читает frozen Git subtree. После публикации сверяйте скачанные ZIP и SHA-256.
+
 Copyright © 2026 Тарасов Роман Олегович. Все права защищены.
