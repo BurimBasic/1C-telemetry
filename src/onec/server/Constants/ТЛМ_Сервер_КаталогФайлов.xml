@@ -21,10 +21,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Каталог файлов</v8:content>
+					<v8:content>Каталог файлов телеметрии</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Абсолютный каталог вне веб-публикации.</Comment>
+			<Comment>Абсолютный каталог вне веб-публикации. По умолчанию в Windows C:\temp.</Comment>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -32,8 +32,14 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<PasswordMode>false</PasswordMode>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если поле пустое, в Windows используется C:\temp.</v8:content>
+				</v8:item>
+			</ToolTip>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
