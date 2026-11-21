@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" version="2.17">
+	<CommonModule uuid="8e128bc5-a3e9-4ced-9c50-1237d093f773">
+		<Properties>
+			<Name>ТЛМ_СкачиваниеФайлов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скачивание файлов телеметрии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Выдаёт файл выбранной записи пользователю с правом просмотра регистра.</Comment>
+			<Global>false</Global>
+			<ClientManagedApplication>false</ClientManagedApplication>
+			<Server>true</Server>
+			<ExternalConnection>false</ExternalConnection>
+			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
+			<ServerCall>true</ServerCall>
+			<Privileged>false</Privileged>
+			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+		</Properties>
+	</CommonModule>
+</MetaDataObject>

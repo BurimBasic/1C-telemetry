@@ -8,8 +8,10 @@
 		</Metadata>
 		<Metadata name="Catalog.ТЛМ_Клиенты.ObjectModule" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32.0" configVersion="93779317974085cb869e75bc2ca9f16c6c7ecfc0" />
 		<Metadata name="CommonModule.ТЛМ_Сервер" id="907e9279-ac5c-5681-80a2-5da2bb07dded" configVersion="a111f8b92682a33ddcaeaed30a3ffa8ed126811f" />
-		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="a4bf6eb0343ffff620bcd15939e87ca90d78a058" />
-		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="6d4f2921999c495368733c774f778b31ac181871" />
+		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="ea0fb6af1933894bf5e190ef68136269a97f27f6" />
+		<Metadata name="CommonModule.ТЛМ_СкачиваниеФайлов" id="8e128bc5-a3e9-4ced-9c50-1237d093f773" configVersion="d578b66f53191d16431077f14dfe31ac0a6f09af" />
+		<Metadata name="CommonModule.ТЛМ_СкачиваниеФайлов.Module" id="8e128bc5-a3e9-4ced-9c50-1237d093f773.0" configVersion="7ae1ebc4d6c5603145637af90eace96ce5dce687" />
+		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="ae930e77f0832781deefc28fc28dcdf4a1e642f8" />
 		<Metadata name="Constant.ТЛМ_Сервер_КаталогФайлов" id="0bb77d10-1c11-52f9-b7ac-623379900a6d" configVersion="a3a95270e413d975ec116b3025e8cd7f619420fe" />
 		<Metadata name="Constant.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" id="8fcd8815-e872-51e5-97c1-313fc1857844" configVersion="9f3b0a3f609796d94f3ebe9a99a1f2bca0dca6f0" />
 		<Metadata name="HTTPService.ТЛМ_ПриемДанных" id="c8308973-55e6-5e93-951f-ba04764141e4" configVersion="9252bbcca9847e04a6467b96c4bd439d82b42d24">
@@ -27,14 +29,16 @@
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON.Resource.ДатаПолучения" id="829d3742-b4f6-5b97-bca0-05ea5408bbdf" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON.Resource.JSON" id="08b386d8-95e8-5f5e-beae-52323b1966bf" />
 		</Metadata>
-		<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы" id="83fbad82-d716-5334-9ce3-07ad531d28d4" configVersion="097c53621e46618f9a6eda59a9605ea9a616566e">
+		<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы" id="83fbad82-d716-5334-9ce3-07ad531d28d4" configVersion="dd480c669ae065db89f42015e29339c749f5dffc">
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Dimension.Клиент" id="2036dcae-286e-599e-8b9e-5269a1e1ad4a" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Dimension.ИдентификаторСообщения" id="8f497d58-afec-5168-84aa-d62b46e293c6" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.ДатаПолучения" id="f8783bb4-7cd9-583c-bd70-e6d37bb912a1" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.ОригинальноеИмя" id="0de850f7-6c9d-562a-ad00-857972fcd23c" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.РазмерБайт" id="e33d0977-3fa6-5eca-8003-d6ab083899f6" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.ОтносительныйПуть" id="30e3f1fb-6180-56ab-8475-b1ec1a287fad" />
+			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Command.ТЛМ_СкачатьФайл" id="e5418a98-d2bb-4d2d-8a5b-e4a8b8e714c6" />
 		</Metadata>
+		<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Command.ТЛМ_СкачатьФайл.CommandModule" id="e5418a98-d2bb-4d2d-8a5b-e4a8b8e714c6.0" configVersion="eb80e55054133f8bde2d16e20289a1e40d4ee636" />
 		<Metadata name="Language.Русский" id="73047e43-73fc-5244-bd51-0b57bc3fa00e" configVersion="0cce66da4ba13acf46211465849651d346cc2f4d" />
 		<Metadata name="Role.ТЛМ_АдминистраторСервера" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a" configVersion="bf74fb476bb81b43dfb4d3de67c7820fa049b63f" />
 		<Metadata name="Role.ТЛМ_АдминистраторСервера.Rights" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a.0" configVersion="a50590c034bb3d57d759119152e87c6a74a1a4f8" />

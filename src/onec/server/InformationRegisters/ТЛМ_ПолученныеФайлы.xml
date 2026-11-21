@@ -155,20 +155,40 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Относительный путь</v8:content>
+							<v8:content>Путь к файлу</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Относительный путь</Comment>
+					<Comment>Путь внутри каталога приёма файлов</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>64</v8:Length>
+							<v8:Length>292</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
 					<FullTextSearch>DontUse</FullTextSearch>
 				</Properties>
 			</Resource>
+			<Command uuid="e5418a98-d2bb-4d2d-8a5b-e4a8b8e714c6">
+				<Properties>
+					<Name>ТЛМ_СкачатьФайл</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Скачать файл</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Скачивает файл выбранной записи сервера телеметрии.</Comment>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:InformationRegisterRecordKey.ТЛМ_ПолученныеФайлы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Text</Representation>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

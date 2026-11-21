@@ -140,11 +140,25 @@ def check_extension(root, component):
             modules[name] = check_bsl(source, script)
             paths[name + ".Module"] = script
             if kind == "CommonModule":
-                require(f'Возврат "{version}";' in source, script, "Версия() расходится с VERSION")
+                download = component == "server" and object_name == "ТЛМ_СкачиваниеФайлов"
+                if not download:
+                    require(f'Возврат "{version}";' in source, script, "Версия() расходится с VERSION")
                 require(all(obj.findtext(f"{MD}Properties/{MD}{setting}") == expected
                             for setting, expected in {"Global":"false", "Privileged":"false",
-                                                      "Server":"true", "ServerCall":"false"}.items()),
+                                                      "Server":"true",
+                                                      "ServerCall":str(download).lower()}.items()),
                         xml, "неверный контекст общего модуля")
+        if kind == "InformationRegister":
+            for command in obj.findall(f"{MD}ChildObjects/{MD}Command"):
+                command_name = command.findtext(f"{MD}Properties/{MD}Name")
+                command_type = command.findtext(f"{MD}Properties/{MD}CommandParameterType/{CORE}Type")
+                require(command_type == f"cfg:InformationRegisterRecordKey.{object_name}",
+                        xml, "параметр команды должен быть ключом записи регистра")
+                script = folder.parent / "Commands" / command_name / "Ext/CommandModule.bsl"
+                command_module = f"{name}.Command.{command_name}.CommandModule"
+                modules[command_module] = check_bsl(script.read_text(encoding="utf-8-sig"), script)
+                require("обработкакоманды" in modules[command_module], script, "нет обработчика команды")
+                paths[command_module] = script
         if kind == "Catalog":
             script = folder / "ObjectModule.bsl"
             modules[name] = check_bsl(script.read_text(encoding="utf-8-sig"), script)

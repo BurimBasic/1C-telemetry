@@ -53,7 +53,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles />
 			<Vendor>Тарасов Роман Олегович</Vendor>
-			<Version>1.0.7-dev</Version>
+			<Version>1.0.8-dev</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<Copyright>
 				<v8:item>
@@ -69,6 +69,7 @@
 			<Role>ТЛМ_ПриемТелеметрии</Role>
 			<Role>ТЛМ_АдминистраторСервера</Role>
 			<CommonModule>ТЛМ_Сервер</CommonModule>
+			<CommonModule>ТЛМ_СкачиваниеФайлов</CommonModule>
 			<HTTPService>ТЛМ_ПриемДанных</HTTPService>
 			<Constant>ТЛМ_Сервер_КаталогФайлов</Constant>
 			<Constant>ТЛМ_Сервер_МаксимальныйРазмерJSONМБ</Constant>

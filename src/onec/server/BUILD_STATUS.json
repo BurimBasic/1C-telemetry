@@ -1,5 +1,5 @@
 {
-  "extension_version": "1.0.7-dev",
+  "extension_version": "1.0.8-dev",
   "component": "server",
   "status": "TEST",
   "checkconfig": "NOT_RUN",
