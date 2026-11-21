@@ -3,17 +3,20 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" format="Hierarchical" version="2.17">
 	<ConfigVersions>
 		<Metadata name="CommonModule.ТЛМ_Клиент" id="52f5a164-8d34-59a7-920a-3d12c8065232" configVersion="ff42cb17d9d72873483713e39e747c3708af68f6" />
-		<Metadata name="CommonModule.ТЛМ_Клиент.Module" id="52f5a164-8d34-59a7-920a-3d12c8065232.0" configVersion="abb90d18414305593429d231cea1d5dce3e1f864" />
-		<Metadata name="Configuration.ТЛМ_Клиент" id="8813e755-abc9-5632-ba88-edf1b8d1baa8" configVersion="a8adc46eec3cd9296b9650ad159d7e99a39e5c0d" />
-		<Metadata name="Constant.ТЛМ_Клиент_АдресСервера" id="d3f7dd7c-6718-5b60-b062-a9bba9432c84" configVersion="010fccab39854412d9af4aa4a0b38df06a172098" />
-		<Metadata name="Constant.ТЛМ_Клиент_ПутьКСертификату" id="5de895f8-d33c-5508-a476-940bd3790de1" configVersion="92e334ffd80e4667b77c43c9413882bc915cb51a" />
-		<Metadata name="Constant.ТЛМ_Клиент_Таймаут" id="febf1b23-4ac7-5863-a905-16130ca99bdc" configVersion="c3db3f3bbdbe5f436475d3de2436df3301b03558" />
-		<Metadata name="Constant.ТЛМ_Клиент_Токен" id="0f3b1119-7788-5db6-b6fa-f12c218810b2" configVersion="a9f62286cb958fa20edda7ff991bd85ad91263c6" />
+		<Metadata name="CommonModule.ТЛМ_Клиент.Module" id="52f5a164-8d34-59a7-920a-3d12c8065232.0" configVersion="a7d6ff2d1c943cdbdf9ab770d6901207c5502432" />
+		<Metadata name="Configuration.ТЛМ_Клиент" id="8813e755-abc9-5632-ba88-edf1b8d1baa8" configVersion="ab5064db217832e86af9a356ea576ab49be994b8" />
+		<Metadata name="Constant.ТЛМ_Клиент_АдресСервера" id="d3f7dd7c-6718-5b60-b062-a9bba9432c84" configVersion="624af12400d9d0f3a409ae4fbda565d82e2dac77" />
+		<Metadata name="Constant.ТЛМ_Клиент_ПутьКСертификату" id="5de895f8-d33c-5508-a476-940bd3790de1" configVersion="8a085c77c4f862f39db6c0c70bce8c8ae7101d6f" />
+		<Metadata name="Constant.ТЛМ_Клиент_Таймаут" id="febf1b23-4ac7-5863-a905-16130ca99bdc" configVersion="de97dc865f50b95990750235b41e7a4fcee64ea2" />
+		<Metadata name="Constant.ТЛМ_Клиент_Токен" id="0f3b1119-7788-5db6-b6fa-f12c218810b2" configVersion="73a5378ba57e9e35997ce6362af6f3d05deee578" />
+		<Metadata name="Constant.ТЛМ_Клиент_ИмяПользователяСервераТелеметрии" id="cbbcd8eb-d0c9-55cb-80a2-217a7732e747" configVersion="8527110da0895c27218010f29b0ec042dbc349b5" />
+		<Metadata name="Constant.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии" id="33dd6c38-1fc6-5766-9b8e-992d1fac4336" configVersion="92d9eb52e0150e092d2d6e6fde081aac1caff969" />
+		<Metadata name="Constant.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии" id="40a96cfa-5341-53c3-bb2c-04b5d6bcc044" configVersion="66f863382033282769eac9be75908b11aca95a37" />
 		<Metadata name="Language.Русский" id="89200dc3-151c-58ec-aedb-c2eb47d5162b" configVersion="48560732fc16a19e614260f04690417ec4272164" />
 		<Metadata name="Role.ТЛМ_АдминистраторКлиента" id="1b122e4e-4d12-5683-989a-f4de5831161e" configVersion="b1629bd82b1c5183b619a131c72bbba50464497f" />
-		<Metadata name="Role.ТЛМ_АдминистраторКлиента.Rights" id="1b122e4e-4d12-5683-989a-f4de5831161e.0" configVersion="f23a33753b6f64883689f47b1a5bb76cd27946ec" />
+		<Metadata name="Role.ТЛМ_АдминистраторКлиента.Rights" id="1b122e4e-4d12-5683-989a-f4de5831161e.0" configVersion="aa46d646ebf2904204b611b65e18b0f78db13b85" />
 		<Metadata name="Role.ТЛМ_ОтправкаТелеметрии" id="7615cc4f-2e8a-58fc-a29c-4dac14e099af" configVersion="9b6bc637de622488f661df940591c56067869e57" />
-		<Metadata name="Role.ТЛМ_ОтправкаТелеметрии.Rights" id="7615cc4f-2e8a-58fc-a29c-4dac14e099af.0" configVersion="976226f737bcf3850534c9e66d347860c42ecc71" />
+		<Metadata name="Role.ТЛМ_ОтправкаТелеметрии.Rights" id="7615cc4f-2e8a-58fc-a29c-4dac14e099af.0" configVersion="d82e7fe6e4f72068df1de50c9f4b53fce5f9eb19" />
 		<Metadata name="Subsystem.ТЛМ_СправкаКлиента" id="76845282-3f50-51e6-aeb1-cbdc3dca34c4" configVersion="06cc6af1689282f8f71ad300a1e97f0ec1c18d56" />
 	</ConfigVersions>
 </ConfigDumpInfo>

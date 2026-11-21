@@ -12,6 +12,27 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ТЛМ_Клиент_ИмяПользователяСервераТелеметрии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ТЛМ_Клиент_ПутьКСертификату</name>
 		<right>
 			<name>Read</name>

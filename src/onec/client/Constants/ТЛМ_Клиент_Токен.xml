@@ -32,7 +32,7 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<PasswordMode>true</PasswordMode>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<DataHistory>DontUse</DataHistory>

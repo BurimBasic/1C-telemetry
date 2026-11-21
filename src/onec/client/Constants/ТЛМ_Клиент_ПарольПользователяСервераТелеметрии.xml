@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="33dd6c38-1fc6-5766-9b8e-992d1fac4336">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии" category="Manager">
+				<xr:TypeId>320271d7-e563-5c60-8a12-1b25e377a01f</xr:TypeId>
+				<xr:ValueId>75e9ca16-0c6a-5cb7-8397-d8bb11d3e93d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии" category="ValueManager">
+				<xr:TypeId>b30354e8-a610-5722-a9f3-8994da433144</xr:TypeId>
+				<xr:ValueId>f07c8c51-1489-58c4-a778-c935c5644c8b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии" category="ValueKey">
+				<xr:TypeId>0cb49cae-3bfc-5be1-9baf-32d159e34d2e</xr:TypeId>
+				<xr:ValueId>a7910242-dee9-5ca2-8531-6216d3a6e80a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиент_ПарольПользователяСервераТелеметрии</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль пользователя сервера телеметрии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Пароль для HTTP Basic на публикации сервера.</Comment>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<PasswordMode>true</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>
