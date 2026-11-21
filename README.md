@@ -1,6 +1,12 @@
 # 1C-telemetry
 
-**Приём JSON и файлов из 1С и скриптов в одну базу 1С.** Отправитель передаёт данные по HTTPS. Сервер определяет клиента по токену, записывает JSON в регистр и сохраняет файлы на диске с исходными именами. UUID из ответа позволяет найти конкретную отправку.
+**Телеметрия и мониторинг нескольких баз 1С:Предприятия.** Если вы сопровождаете базы разных клиентов или подразделений, 1C-telemetry помогает собирать сведения из этих баз в одной центральной базе 1С. Базы-отправители и внешние скрипты передают данные по HTTPS.
+
+- **Контроль версий 1С.** Отправляйте версию платформы, конфигурации и расширений из каждой базы, чтобы видеть, где требуется обновление.
+- **Сбор резервных копий.** После создания бэкапа штатным заданием или скриптом передавайте готовый файл и JSON со статусом, временем и размером.
+- **Сопровождение и диагностика.** Собирайте журналы, отчёты, результаты обменов и статусы регламентных заданий. По времени последней записи видно, когда база последний раз отправляла данные.
+
+Состав сведений и расписание задаёт ваш скрипт или код 1С. Приёмник определяет отправителя по токену, записывает JSON в регистр и сохраняет файлы с исходными именами. Конкретную отправку можно найти по UUID из ответа.
 
 - **Сервер** устанавливается в центральную базу и публикуется по HTTPS. Администратор управляет токенами, просматривает JSON и скачивает принятые файлы.
 - **Клиент** устанавливается в базу-отправитель. В нём есть форма для ручной проверки и серверный BSL API для автоматизации. Публиковать базу-отправитель не требуется.
@@ -8,13 +14,11 @@
 
 ## Скачать
 
-Комплект от **21.11.2026** для **1С:Предприятия 8.3.27** с управляемым интерфейсом. Сервер **1.0.9-dev**, клиент **1.0.7-dev**. Ручной обмен из клиентской базы проверен на тестовом стенде.
-
 | Пакет для Конфигуратора | Скачать | Сверить |
 |---|---|---|
-| Сервер `ТЛМ_Сервер` | [ZIP](https://github.com/BurimBasic/1C-telemetry/raw/665cbabe9880be28e3d5cd5a28b3d0bce54a4ea8/artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip) | [SHA-256](https://github.com/BurimBasic/1C-telemetry/blob/665cbabe9880be28e3d5cd5a28b3d0bce54a4ea8/artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip.sha256) · [Манифест](https://github.com/BurimBasic/1C-telemetry/blob/665cbabe9880be28e3d5cd5a28b3d0bce54a4ea8/artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip.manifest.json) |
-| Клиент `ТЛМ_Клиент` | [ZIP](https://github.com/BurimBasic/1C-telemetry/raw/7aef342b5b46ce81a4c6e4782b8de8d1ee9d2f09/artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip) | [SHA-256](https://github.com/BurimBasic/1C-telemetry/blob/7aef342b5b46ce81a4c6e4782b8de8d1ee9d2f09/artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip.sha256) · [Манифест](https://github.com/BurimBasic/1C-telemetry/blob/7aef342b5b46ce81a4c6e4782b8de8d1ee9d2f09/artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip.manifest.json) |
-| Примеры BSL, PowerShell, Python, cURL и штатного задания | [ZIP](https://github.com/BurimBasic/1C-telemetry/raw/2146d628a4d2d3f9c50633f09005602a3f86444c/artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip) | [SHA-256](https://github.com/BurimBasic/1C-telemetry/blob/2146d628a4d2d3f9c50633f09005602a3f86444c/artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip.sha256) · [Манифест](https://github.com/BurimBasic/1C-telemetry/blob/2146d628a4d2d3f9c50633f09005602a3f86444c/artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip.manifest.json) |
+| Сервер `ТЛМ_Сервер` · 1.0.9-dev | [ZIP](https://github.com/BurimBasic/1C-telemetry/raw/665cbabe9880be28e3d5cd5a28b3d0bce54a4ea8/artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip) | [SHA-256](https://github.com/BurimBasic/1C-telemetry/blob/665cbabe9880be28e3d5cd5a28b3d0bce54a4ea8/artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip.sha256) · [Манифест](https://github.com/BurimBasic/1C-telemetry/blob/665cbabe9880be28e3d5cd5a28b3d0bce54a4ea8/artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip.manifest.json) |
+| Клиент `ТЛМ_Клиент` · 1.0.7-dev | [ZIP](https://github.com/BurimBasic/1C-telemetry/raw/7aef342b5b46ce81a4c6e4782b8de8d1ee9d2f09/artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip) | [SHA-256](https://github.com/BurimBasic/1C-telemetry/blob/7aef342b5b46ce81a4c6e4782b8de8d1ee9d2f09/artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip.sha256) · [Манифест](https://github.com/BurimBasic/1C-telemetry/blob/7aef342b5b46ce81a4c6e4782b8de8d1ee9d2f09/artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip.manifest.json) |
+| Примеры BSL, PowerShell, Python, cURL и штатного задания · 1.0.4-dev | [ZIP](https://github.com/BurimBasic/1C-telemetry/raw/2146d628a4d2d3f9c50633f09005602a3f86444c/artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip) | [SHA-256](https://github.com/BurimBasic/1C-telemetry/blob/2146d628a4d2d3f9c50633f09005602a3f86444c/artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip.sha256) · [Манифест](https://github.com/BurimBasic/1C-telemetry/blob/2146d628a4d2d3f9c50633f09005602a3f86444c/artifacts/releases/1C-telemetry_examples_1.0.4-dev.zip.manifest.json) |
 
 Архивы расширений содержат XML и BSL для загрузки в Конфигураторе. Для сверки архива в Windows выполните `Get-FileHash -Algorithm SHA256 .\имя-архива.zip` и сравните результат с файлом SHA-256.
 
@@ -198,6 +202,6 @@ Read-TelemetryResult $response 201
 | `503` при отправке файла | Каталог приёма и права процесса сервера 1С |
 | Таймаут или разрыв связи | Проверьте, появилась ли запись в центральной базе, прежде чем повторять POST |
 
-[Установка и эксплуатация](docs/INSTALLATION.md) · [История версий](CHANGELOG.md).
+[Установка и эксплуатация](docs/INSTALLATION.md) · [История версий](CHANGELOG.md) · [Лицензия MIT](LICENSE).
 
-Copyright © 2026 Тарасов Роман Олегович. Все права защищены.
+Copyright © 2026 Тарасов Роман Олегович.
