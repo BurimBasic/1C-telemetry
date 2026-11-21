@@ -1,0 +1,191 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "client",
+  "extension_version": "1.0.5-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74",
+  "source_commit_tree": "c753c8d4fe5c874f28864f4c2fca8f14f32eced7",
+  "source_subtree": "800da1b04f1aa25a5c11caf0c3f00fcdaabcb545",
+  "source_files": 21,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "135720f5e6ece574c46b295a8d0e6287c9a89f9a"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент.xml",
+      "size": 1288,
+      "sha1": "9d1831e359991725c8e33074174ee2cbbe825622"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент/Ext/Module.bsl",
+      "size": 21660,
+      "sha1": "c328225f02c14fcbb84f3e4e294f4f814bf208ea"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 3157,
+      "sha1": "d93712e8353d3edc7a525e849602e93df2deaae3"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 4267,
+      "sha1": "27e599bcb85dd5044572615481b8c453b870e501"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_АдресСервера.xml",
+      "size": 2130,
+      "sha1": "6bd1caa10771d8aca916a46d5d832a4a1d850e8b"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ИмяПользователяСервераТелеметрии.xml",
+      "size": 2369,
+      "sha1": "c92255632dfa87ac3671966bc1f6d0bdd237f259"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии.xml",
+      "size": 2367,
+      "sha1": "d1e5b8db270b12721e473f73b20ae2d739691d0e"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ПарольПользователяСервераТелеметрии.xml",
+      "size": 2379,
+      "sha1": "e935dce73a0f93d7b30cd9a9cd496e19a1483362"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ПутьКСертификату.xml",
+      "size": 2183,
+      "sha1": "2e65a5f878b34cbf811aac0abef71a1461ac1d98"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Таймаут.xml",
+      "size": 2115,
+      "sha1": "b4263d151ab5e403a02323d7218d83600e50104e"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Токен.xml",
+      "size": 2127,
+      "sha1": "b4b7829fa3544b7e34f2aa5f058b53945b6420e6"
+    },
+    {
+      "path": "Languages/Русский.xml",
+      "size": 894,
+      "sha1": "c5d2e48522ea08d53509baaebdc8584d9829ceb8"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента.xml",
+      "size": 944,
+      "sha1": "ec9960ea7eb47cff3e56e8273996ada88d52ef10"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента/Ext/Rights.xml",
+      "size": 3075,
+      "sha1": "01bc13533656001d9fad6c33901f8241fd12cd45"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии.xml",
+      "size": 938,
+      "sha1": "34dc8c1b79876d3e5d920348f62e7ed87f53624c"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии/Ext/Rights.xml",
+      "size": 1696,
+      "sha1": "ce8403c88a18eaa7e1c134084d57e03c5106673d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента.xml",
+      "size": 1130,
+      "sha1": "3239a0e6b2ac540cae8076b5a8ce0ee1c96ba865"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help/ru.html",
+      "size": 1927,
+      "sha1": "53a35a70d1dd51a85527d96efd3c27b2e7c3df6d"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "74bcb8d94c4a99ab8debf562260f6cdf52347f72"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_client_1.0.5-dev-r1.zip",
+  "zip_size": 24326,
+  "sha256": "0aa5ebb6ebf7c5d52be6333fa00608b03ca092913ee5d6d670fa4227b18f8758",
+  "git_blob_sha1": "9c83ff82a41a52c937fca0811e2d629add65672a",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 21,
+    "entry_count": 21
+  },
+  "testing": [
+    {
+      "instrument": "Проверка исходников, констант, ролей и локальная регрессия",
+      "version": "Python 3",
+      "run_id": "W001-CLIENT-BASIC-01",
+      "status": "PASS",
+      "detail": "12 объектов клиента. Подтверждены типы трёх констант, маскирование и права ролей. 11 тестов.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "structural",
+      "run_id": "W001-CLIENT-BASIC-02",
+      "status": "PASS",
+      "detail": "15 структурных проверок клиентского расширения.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "dc82d5c53a4c9f6db60eaf93e0a1401e",
+      "status": "PASS",
+      "detail": "Нативный синтаксис точного текста клиентского модуля.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "8c310a9db8c13b449df3d7a91f5e62cc",
+      "status": "PASS",
+      "detail": "Фрагмент приёмки синтаксически проверен вместе с методом клиента в одном модуле.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    },
+    {
+      "instrument": "BSL Language Server",
+      "version": "1.0.7",
+      "run_id": "W001-CLIENT-BASIC-03",
+      "status": "FAIL",
+      "detail": "Диагностика CommonModuleInvalidType сохраняется для неглобального серверного модуля, также выданы стилистические замечания.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    },
+    {
+      "instrument": "Проверка совместимости принимающей публикации",
+      "version": "Windows PowerShell и тестовая 1С",
+      "run_id": "W001-CLIENT-BASIC-04",
+      "status": "PASS",
+      "detail": "Внешний GET и оба POST с HTTP Basic и токеном. Негативные ответы 401 разделяют вход в публикацию и неверный токен. В принимающих регистрах сверены JSON и метаданные файла. Клиентский BSL ещё не установлен.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    },
+    {
+      "instrument": "Установка и исходящий запрос из клиентской базы",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Владелец установит клиентский ZIP и запустит приёмочный фрагмент из тестовой базы.",
+      "source_commit": "0ec61e840b9b27f8959d014e75f73982770eea74"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}
