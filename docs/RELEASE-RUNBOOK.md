@@ -1,0 +1,39 @@
+# Обязательный регламент сборки и выдачи ZIP
+
+Адаптация проверенного OFFICE20 ZIP release runbook и CFE build handoff. Применяется к обоим расширениям отдельно, всегда выдавать обе актуальные ссылки.
+
+## Формат
+- Полный ZIP всей выгрузки расширения XML/BSL, не патч и не обёртка с лишней верхней папкой. Configuration.xml в корне, все реально существующие файлы source subtree, включая VERSION, BUILD_STATUS.json и метаданные, роли, Ext, подчинённые файлы; без чужих корневых README/тестов/секретов. ConfigDumpInfo и остальные файлы штатной выгрузки сохранять по проверенному профилю.
+- ZIP32, DEFLATE method 8 для файлов, UTF-8 пути с PKZIP bit 11 для не-ASCII, без шифрования/ZIP64, без traversal, абсолютных/дублирующихся путей. Не CP866. Проверить стандартную Windows-распаковку без специальных параметров в пустой каталог; каждый путь из Configuration.xml существует. CRC недостаточно: кириллица может быть испорчена при верной CRC.
+- Имена: artifacts/releases/1C-telemetry_client_<VERSION>-r<N>.zip и 1C-telemetry_server_<VERSION>-r<N>.zip; для каждого .zip.sha256 и .zip.manifest.json. Начальная версия разработки — 1.0.0-dev, следующая функциональная сборка 1.0.1-dev и т. д.; новый runtime BSL/XML после выданного ZIP требует нового уникального build, синхронизации VERSION, всех нужных вхождений версии Configuration.xml, BUILD_STATUS.json.extension_version, экспортного значения версии модуля. R2 только исправление упаковки идентичного source tree, без замены прежних байтов. Раздельные версии компонентов либо согласованное обновление — фиксировать в манифесте.
+- CFE — только штатная сборка 1С, не переименованный ZIP. CFE может использоваться только внутри испытаний при необходимости, не входит в поставку заказчику. Полные исходные ZIP — обязательный и единственный формат поставки расширений.
+
+## Immutable source
+Взять свежий HEAD и зафиксировать полный SOURCE_SHA; проверить tree SHA, рекурсивное дерево truncated=false, точный список всех blob внутри src/onec/client и src/onec/server. У каждого файла path,size, Git blob SHA-1. Проверить точные байты (SHA1("blob "+len+NUL+bytes)), не использовать длину Unicode строки. Не паковать недоступные/несовпадающие файлы. Никаких hardcoded старых file_count; изменение состава анализировать. Не запускать исторические генераторы. Не перепаковывать прежние архивы.
+
+## Проверки и сборка
+Согласованный стенд и порядок ответственности: [TEST-PLAN.md](TEST-PLAN.md).
+1. Локальный/авторизованный CI: полный структурный preflight XML/BSL, BSL LS, комментарии/копирайт, синхронизация версий, unit/negative/security, проверка скриптов PowerShell/Python/cURL. Exact SHA и результаты. Для регулярных изменений адресные тесты, для релиза полный применимый набор. Не использовать платный hosted runner без согласования и не подключать приватный self-hosted runner к публичному repo. Пока runner не предоставлен, локальная проверка и честный статус.
+2. Сборщик из frozen subtree; fallback из Git API только по точным байтам с SHA и размером. После ZIP независимо распаковать все записи, сравнить inventory и каждый байт с Git, CRC, local/central headers, EOCD, ZIP32, bit11, method8, количество файлов и entries отдельно. Проверить реальные пути после обычной Windows-распаковки; импорт в расширение не в основную конфигурацию.
+3. Нативная платформа: CheckConfig, установка тестовая, работа двух расширений и внешних скриптов, регламентное задание, TLS, права, negative, параллельность, сохранность истории. Все проверки отдельными PASS/FAIL/NOT_RUN. Нативный компилятор не подменять BSL LS или Python preflight. По прямому запросу владельца допустим TEST ZIP при недоступном native E2E, явно указать NOT_RUN; стабильный релиз только после принятой нативной проверки.
+4. Манифест: schema TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1, component, extension_version, revision, source_commit, source_commit_tree, source_subtree, source_files (число), files[] (path,size,sha1), zip_path, zip_size, sha256, git_blob_sha1, archive (method, bit11, zip32, file_count, entry_count), testing (точная версия инструментов, SHA, run IDs и результаты), ограничения/совместимость. .sha256 соответствует тем же байтам. Сводный release receipt фиксирует версии обеих сторон.
+
+## Публикация
+Тестовая ветка → тестовая установка и проверка → PR → owner review → main → неизменяемый релиз. Перед продвижением сверить scope и exact SHA, не force. Не подменять прежние ZIP и теги. Долговременный ZIP сохранить в artifacts/releases в новом release commit (родитель — source SHA, если используется прямой release commit; при PR сохранить точный source provenance и проверить дерево); при tag/release вложить те же байты. GitHub Actions artifact временный, не замена релизу. До ссылки проверить ref/commit→tree→zip path→blob SHA/size→manifest/sha256→доступность точной ссылки. В случае 404 устранить причину, а не повторять ссылку.
+Обязанность автора: README вверху показывает последнюю версию клиента/сервера, статус, дату, прямые ссылки на ZIP (immutable SHA URL https://github.com/BurimBasic/1C-telemetry/raw/<RELEASE_COMMIT_SHA>/artifacts/releases/<ZIP>), манифест/хеши, GitHub Release если создан, тесты и ограничения. CHANGELOG сохраняет всю историю. Инструкции и acceptance report рядом. Не ссылаться на main как неизменяемый артефакт, не выдумывать sandbox URL. В ответе владельцу всегда повторять проверенные ссылки на оба текущих ZIP, даже если изменился только один. Если релиза нет — явно указать.
+
+
+## Сборка опубликованного TEST комплекта
+
+Python 3.12.14, Git и zlib. Для точного воспроизведения используйте версию zlib среды первой сборки, указанную в отчёте. Параметр `--evidence` принимает JSON-массив `testing` из соответствующего манифеста, а для примеров передаётся `--version`.
+
+```sh
+python scripts/build_release.py server "$SOURCE_SHA" --evidence evidence.json
+python scripts/build_release.py client "$SOURCE_SHA" --evidence evidence.json
+python scripts/build_release.py examples "$SOURCE_SHA" --version 1.0.0-dev --evidence evidence.json
+python scripts/verify_release.py artifacts/releases/*.zip
+```
+
+Для каждой команды используйте SHA и отчёт именно её компонента. SHA должен существовать как коммит Git. Скрипт откажется заменить файл другими байтами. При обновлении XML/BSL сверяйте соответствующие строки `configVersion` в `ConfigDumpInfo.xml` с SHA-1 байтов изменённого файла. Проверка архивов повторно читает frozen Git subtree. После публикации сверяйте скачанные ZIP и SHA-256.
+
+Copyright © 2026 Тарасов Роман Олегович. Все права защищены.
