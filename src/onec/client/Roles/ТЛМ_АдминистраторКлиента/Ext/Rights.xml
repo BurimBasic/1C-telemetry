@@ -137,4 +137,22 @@
 			<value>true</value>
 		</right>
 	</object>
+	<object>
+		<name>DataProcessor.ТЛМ_ПроверкаТелеметрии</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ТЛМ_СправкаКлиента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
 </Rights>

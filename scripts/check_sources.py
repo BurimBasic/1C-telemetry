@@ -12,15 +12,17 @@ from uuid import UUID
 COPY = "Copyright © 2026 Тарасов Роман Олегович. Все права защищены."
 MD = "{http://v8.1c.ru/8.3/MDClasses}"
 CORE = "{http://v8.1c.ru/8.1/data/core}"
+FORM = "{http://v8.1c.ru/8.3/xcf/logform}"
+CLIENT_CHECK = "ТЛМ_ПроверкаТелеметрии"
 TYPES = {
-    "client": {"Language", "Subsystem", "Role", "CommonModule", "Constant"},
+    "client": {"Language", "Subsystem", "Role", "CommonModule", "Constant", "DataProcessor"},
     "server": {"Language", "Subsystem", "Role", "CommonModule", "HTTPService",
                "Constant", "Catalog", "InformationRegister"},
 }
 DIRECTORIES = {
     "Catalog": "Catalogs", "Constant": "Constants", "InformationRegister": "InformationRegisters",
     "CommonModule": "CommonModules", "HTTPService": "HTTPServices", "Role": "Roles",
-    "Subsystem": "Subsystems", "Language": "Languages",
+    "Subsystem": "Subsystems", "Language": "Languages", "DataProcessor": "DataProcessors",
 }
 DECLARATION = re.compile(r"^\s*(?:Асинх\s+)?(Функция|Процедура)\s+(\w+)", re.IGNORECASE)
 ENDING = re.compile(r"^\s*Конец(Функции|Процедуры)\b", re.IGNORECASE)
@@ -105,6 +107,31 @@ def check_search_label(properties, path):
             path, "русский синоним должен начинаться с ТЛМ_")
 
 
+def check_client_form(xml, obj, paths, modules):
+    """Сверяет штатное открытие, обработчики и вызовы проверочной формы."""
+    name = f"DataProcessor.{CLIENT_CHECK}.Form.Форма"
+    form_xml = xml.with_suffix("") / "Forms/Форма.xml"
+    layout_path = form_xml.with_suffix("") / "Ext/Form.xml"
+    script = layout_path.with_suffix("") / "Module.bsl"
+    require(obj.findtext(f"{MD}Properties/{MD}DefaultForm") == name
+            and [item.text for item in obj.findall(f"{MD}ChildObjects/{MD}Form")] == ["Форма"],
+            xml, "должна быть зарегистрирована основная форма проверки")
+    form = ET.parse(form_xml).getroot().find(MD + "Form")
+    require(form.findtext(f"{MD}Properties/{MD}FormType") == "Managed", form_xml, "форма не управляемая")
+    layout = ET.parse(layout_path)
+    source = script.read_text(encoding="utf-8-sig")
+    handlers = check_bsl(source, script)
+    actions = {action.text.casefold() for action in layout.iter(FORM + "Action")}
+    require(actions == {"проверитьподключение", "отправитьjson", "выбратьфайл", "отправитьфайл"}
+            and actions <= handlers, script, "расходятся обработчики команд формы")
+    require(all(f"ТЛМ_Клиент.{method}(" in source for method in
+                ("Версия", "ПроверитьПодключение", "ОтправитьJSON", "ОтправитьФайл")),
+            script, "форма должна вызывать весь клиентский API")
+    paths[name] = form_xml
+    paths[name + ".Form"] = (layout_path, script)
+    modules[name] = handlers
+
+
 def check_extension(root, component):
     """Сверяет версии, состав XML, UUID, роли, маршруты, модули и штатную справку."""
     conf = ET.parse(root / "Configuration.xml").getroot()[0]
@@ -138,9 +165,9 @@ def check_extension(root, component):
         require(obj.findtext(f"{MD}Properties/{MD}Name") == object_name and obj.tag == MD + kind,
                 xml, "имя или тип не совпадает")
         object_properties = obj.find(MD + "Properties")
-        if kind == "Constant" or (component == "server" and not standard_language):
+        if kind in {"Constant", "DataProcessor"} or (component == "server" and not standard_language):
             check_search_label(object_properties, xml)
-        if kind in {"Constant", "Catalog", "InformationRegister"}:
+        if kind in {"Constant", "Catalog", "InformationRegister", "DataProcessor"}:
             require(object_properties.findtext(MD + "UseStandardCommands") == "true",
                     xml, "отключены стандартные команды объекта")
         for item in obj.iter():
@@ -150,6 +177,9 @@ def check_extension(root, component):
                 require(identity not in ids, xml, "неуникальный UUID")
                 ids.add(identity)
         folder = xml.with_suffix("") / "Ext"
+        if kind == "DataProcessor":
+            require(component == "client" and object_name == CLIENT_CHECK, xml, "лишняя обработка")
+            check_client_form(xml, obj, paths, modules)
         if kind in {"CommonModule", "HTTPService"}:
             script = folder / "Module.bsl"
             source = script.read_text(encoding="utf-8-sig")
@@ -211,12 +241,19 @@ def check_extension(root, component):
     records = {item.attrib["name"]: item for item in index[0]}
     require(set(records) == set(paths), root, "состав ConfigDumpInfo расходится")
     for name, path in paths.items():
-        require(records[name].attrib["configVersion"] == hashlib.sha1(path.read_bytes()).hexdigest(),
+        files = path if isinstance(path, tuple) else (path,)
+        digest = hashlib.sha1(b"".join(p.read_bytes() for p in files)).hexdigest()
+        require(records[name].attrib["configVersion"] == digest,
                 path, "инвентарь ConfigDumpInfo устарел")
     for path in root.rglob("*"):
         if not path.is_file():
             continue
-        require(not any(part in {"Forms", "ScheduledJobs", "DataProcessors", "Reports"} for part in path.parts),
+        relative = path.relative_to(root)
+        in_client_check = component == "client" and relative.parts[:2] in {
+            ("DataProcessors", CLIENT_CHECK), ("DataProcessors", CLIENT_CHECK + ".xml"),
+        }
+        require(in_client_check or not any(
+                    part in {"Forms", "ScheduledJobs", "DataProcessors", "Reports"} for part in path.parts[:-1]),
                 path, "лишний объект")
         if path.suffix in {".xml", ".bsl", ".html"}:
             source = path.read_text(encoding="utf-8-sig")
