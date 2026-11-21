@@ -2,19 +2,19 @@
 <!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" format="Hierarchical" version="2.17">
 	<ConfigVersions>
-		<Metadata name="Catalog.ТЛМ_Клиенты" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32" configVersion="d2a06d2a2c2cd7bfca566628b3d6e845352ece34">
+		<Metadata name="Catalog.ТЛМ_Клиенты" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32" configVersion="ac4384ea06b5b07d8eed61e09b2a0c497faed3e1">
 			<Metadata name="Catalog.ТЛМ_Клиенты.Attribute.Активен" id="fdadca16-dd9a-5fab-b7c2-421560b2bdbb" />
 			<Metadata name="Catalog.ТЛМ_Клиенты.Attribute.Токен" id="e841fab7-3748-519b-8c8a-f4d570bd17a8" />
 		</Metadata>
 		<Metadata name="Catalog.ТЛМ_Клиенты.ObjectModule" id="50ac3c01-869f-51ac-8c3f-559d97cf9f32.0" configVersion="93779317974085cb869e75bc2ca9f16c6c7ecfc0" />
-		<Metadata name="CommonModule.ТЛМ_Сервер" id="907e9279-ac5c-5681-80a2-5da2bb07dded" configVersion="a111f8b92682a33ddcaeaed30a3ffa8ed126811f" />
-		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="ea0fb6af1933894bf5e190ef68136269a97f27f6" />
-		<Metadata name="CommonModule.ТЛМ_СкачиваниеФайлов" id="8e128bc5-a3e9-4ced-9c50-1237d093f773" configVersion="d578b66f53191d16431077f14dfe31ac0a6f09af" />
+		<Metadata name="CommonModule.ТЛМ_Сервер" id="907e9279-ac5c-5681-80a2-5da2bb07dded" configVersion="3fc3b1e7d757d9b7d042a593d85c3395205dc688" />
+		<Metadata name="CommonModule.ТЛМ_Сервер.Module" id="907e9279-ac5c-5681-80a2-5da2bb07dded.0" configVersion="5a1c908a2d605a6d0145202e3a32d053c7940b48" />
+		<Metadata name="CommonModule.ТЛМ_СкачиваниеФайлов" id="8e128bc5-a3e9-4ced-9c50-1237d093f773" configVersion="540b908c54263534c310ee956736b9a54ee340bc" />
 		<Metadata name="CommonModule.ТЛМ_СкачиваниеФайлов.Module" id="8e128bc5-a3e9-4ced-9c50-1237d093f773.0" configVersion="7ae1ebc4d6c5603145637af90eace96ce5dce687" />
-		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="ae930e77f0832781deefc28fc28dcdf4a1e642f8" />
-		<Metadata name="Constant.ТЛМ_Сервер_КаталогФайлов" id="0bb77d10-1c11-52f9-b7ac-623379900a6d" configVersion="a3a95270e413d975ec116b3025e8cd7f619420fe" />
-		<Metadata name="Constant.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" id="8fcd8815-e872-51e5-97c1-313fc1857844" configVersion="9f3b0a3f609796d94f3ebe9a99a1f2bca0dca6f0" />
-		<Metadata name="HTTPService.ТЛМ_ПриемДанных" id="c8308973-55e6-5e93-951f-ba04764141e4" configVersion="9252bbcca9847e04a6467b96c4bd439d82b42d24">
+		<Metadata name="Configuration.ТЛМ_Сервер" id="a208d6a1-8f5f-5903-a68c-535e078401fe" configVersion="e028bd475a4fe6feca2a896be11e7f03f4141e20" />
+		<Metadata name="Constant.ТЛМ_Сервер_КаталогФайлов" id="0bb77d10-1c11-52f9-b7ac-623379900a6d" configVersion="c2fe892d5bed14be66798e1a14ad0cc35feca11c" />
+		<Metadata name="Constant.ТЛМ_Сервер_МаксимальныйРазмерJSONМБ" id="8fcd8815-e872-51e5-97c1-313fc1857844" configVersion="a2453b57a301b41f6d6067b9cea092d9641b7d88" />
+		<Metadata name="HTTPService.ТЛМ_ПриемДанных" id="c8308973-55e6-5e93-951f-ba04764141e4" configVersion="2185060123f09154544c57be103cb14079429120">
 			<Metadata name="HTTPService.ТЛМ_ПриемДанных.URLTemplate.JSON" id="e050e184-2da9-5983-9ead-a5b1d5bc66a1" />
 			<Metadata name="HTTPService.ТЛМ_ПриемДанных.URLTemplate.JSON.Method.POST" id="ba70b2ec-0c4d-5ad2-b83d-7fe1be47fb8a" />
 			<Metadata name="HTTPService.ТЛМ_ПриемДанных.URLTemplate.Файл" id="411df17c-5c0c-5afe-8532-9f08d0284372" />
@@ -23,13 +23,13 @@
 			<Metadata name="HTTPService.ТЛМ_ПриемДанных.URLTemplate.Проверка.Method.GET" id="0598049f-4fc6-5532-99c3-1de063afd863" />
 		</Metadata>
 		<Metadata name="HTTPService.ТЛМ_ПриемДанных.Module" id="c8308973-55e6-5e93-951f-ba04764141e4.0" configVersion="ec27fed411f5cf11a71733f72821d84c9a17b6e4" />
-		<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON" id="05aaf8cc-b95a-5946-914b-454f4ff7ad9c" configVersion="4d7273f8d1eeba83ff23d414587afe52bd83ba85">
+		<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON" id="05aaf8cc-b95a-5946-914b-454f4ff7ad9c" configVersion="9f9b4929c1140316415ed06d496851b88bc56cdb">
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON.Dimension.Клиент" id="c531cbff-c7a6-54f4-b85b-24b24d0464a8" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON.Dimension.ИдентификаторСообщения" id="a3c190d5-eb88-5115-bb57-42b3d2bb87d2" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON.Resource.ДатаПолучения" id="829d3742-b4f6-5b97-bca0-05ea5408bbdf" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеJSON.Resource.JSON" id="08b386d8-95e8-5f5e-beae-52323b1966bf" />
 		</Metadata>
-		<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы" id="83fbad82-d716-5334-9ce3-07ad531d28d4" configVersion="dd480c669ae065db89f42015e29339c749f5dffc">
+		<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы" id="83fbad82-d716-5334-9ce3-07ad531d28d4" configVersion="f719f76a41cbf78e1d5e8fb5237b24590793afb4">
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Dimension.Клиент" id="2036dcae-286e-599e-8b9e-5269a1e1ad4a" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Dimension.ИдентификаторСообщения" id="8f497d58-afec-5168-84aa-d62b46e293c6" />
 			<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Resource.ДатаПолучения" id="f8783bb4-7cd9-583c-bd70-e6d37bb912a1" />
@@ -40,10 +40,10 @@
 		</Metadata>
 		<Metadata name="InformationRegister.ТЛМ_ПолученныеФайлы.Command.ТЛМ_СкачатьФайл.CommandModule" id="e5418a98-d2bb-4d2d-8a5b-e4a8b8e714c6.0" configVersion="eb80e55054133f8bde2d16e20289a1e40d4ee636" />
 		<Metadata name="Language.Русский" id="73047e43-73fc-5244-bd51-0b57bc3fa00e" configVersion="0cce66da4ba13acf46211465849651d346cc2f4d" />
-		<Metadata name="Role.ТЛМ_АдминистраторСервера" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a" configVersion="bf74fb476bb81b43dfb4d3de67c7820fa049b63f" />
-		<Metadata name="Role.ТЛМ_АдминистраторСервера.Rights" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a.0" configVersion="a50590c034bb3d57d759119152e87c6a74a1a4f8" />
-		<Metadata name="Role.ТЛМ_ПриемТелеметрии" id="981308ff-d229-533b-aaa5-c302cf42d43c" configVersion="620d375555f7c2662b73f1aff1bb64ef16f91be3" />
+		<Metadata name="Role.ТЛМ_АдминистраторСервера" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a" configVersion="d575a71bdbcb684052c3d374373fa17002beebd5" />
+		<Metadata name="Role.ТЛМ_АдминистраторСервера.Rights" id="e5ed0fb5-0ff9-5e77-a53a-457fcaefb98a.0" configVersion="0ede6552d8cddad721c9c4c782927a5b51c24495" />
+		<Metadata name="Role.ТЛМ_ПриемТелеметрии" id="981308ff-d229-533b-aaa5-c302cf42d43c" configVersion="e84cd5140950aea802a93701142be28472a4344a" />
 		<Metadata name="Role.ТЛМ_ПриемТелеметрии.Rights" id="981308ff-d229-533b-aaa5-c302cf42d43c.0" configVersion="dce42633684fa6e5cc2b9f6b36043107bccd564b" />
-		<Metadata name="Subsystem.ТЛМ_СправкаСервера" id="2d6380d0-19cb-5638-8fb5-3bf367ee769b" configVersion="ba1b15d903833e961f0c8479a930dc57c8bc0522" />
+		<Metadata name="Subsystem.ТЛМ_СправкаСервера" id="2d6380d0-19cb-5638-8fb5-3bf367ee769b" configVersion="e377056add8ecf23afc4ade8b0ac0e7ae0ed050b" />
 	</ConfigVersions>
 </ConfigDumpInfo>

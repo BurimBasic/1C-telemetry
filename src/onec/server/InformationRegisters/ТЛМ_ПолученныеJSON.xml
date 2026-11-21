@@ -37,7 +37,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Полученные JSON</v8:content>
+					<v8:content>ТЛМ_Полученные JSON</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>История по клиенту и UUID.</Comment>

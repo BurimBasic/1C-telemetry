@@ -97,6 +97,14 @@ def check_string_lengths(metadata, path):
                 f"недопустимая ограниченная длина строки: {length!r}. Используйте 0 для неограниченной")
 
 
+def check_search_label(properties, path):
+    """Сверяет русский синоним, по которому оператор ищет объект в 1С."""
+    synonyms = properties.findall(f"{MD}Synonym/{CORE}item")
+    require(any(item.findtext(CORE + "lang") == "ru"
+                and item.findtext(CORE + "content", "").startswith("ТЛМ_") for item in synonyms),
+            path, "русский синоним должен начинаться с ТЛМ_")
+
+
 def check_extension(root, component):
     """Сверяет версии, состав XML, UUID, роли, маршруты, модули и штатную справку."""
     conf = ET.parse(root / "Configuration.xml").getroot()[0]
@@ -107,6 +115,8 @@ def check_extension(root, component):
             and build["component"] == component, root, "расхождение версий")
     check_copyright(properties, root / "Configuration.xml")
     check_compatibility(properties, root)
+    if component == "server":
+        check_search_label(properties, root / "Configuration.xml")
     require(COPY in properties.findtext(MD + "Comment"), root, "авторство в Comment")
     require(properties.findtext(MD + "ConfigurationExtensionPurpose") == "AddOn"
             and properties.findtext(MD + "NamePrefix") == "ТЛМ_", root, "назначение или префикс")
@@ -127,6 +137,12 @@ def check_extension(root, component):
         objects[name] = obj
         require(obj.findtext(f"{MD}Properties/{MD}Name") == object_name and obj.tag == MD + kind,
                 xml, "имя или тип не совпадает")
+        object_properties = obj.find(MD + "Properties")
+        if kind == "Constant" or (component == "server" and not standard_language):
+            check_search_label(object_properties, xml)
+        if kind in {"Constant", "Catalog", "InformationRegister"}:
+            require(object_properties.findtext(MD + "UseStandardCommands") == "true",
+                    xml, "отключены стандартные команды объекта")
         for item in obj.iter():
             require(standard_language or item.tag != MD + "ExtendedConfigurationObject", xml, "заимствованный объект")
             if "uuid" in item.attrib:
@@ -150,8 +166,10 @@ def check_extension(root, component):
                         xml, "неверный контекст общего модуля")
         if kind == "InformationRegister":
             for command in obj.findall(f"{MD}ChildObjects/{MD}Command"):
-                command_name = command.findtext(f"{MD}Properties/{MD}Name")
-                command_type = command.findtext(f"{MD}Properties/{MD}CommandParameterType/{CORE}Type")
+                command_properties = command.find(MD + "Properties")
+                check_search_label(command_properties, xml)
+                command_name = command_properties.findtext(MD + "Name")
+                command_type = command_properties.findtext(f"{MD}CommandParameterType/{CORE}Type")
                 require(command_type == f"cfg:InformationRegisterRecordKey.{object_name}",
                         xml, "параметр команды должен быть ключом записи регистра")
                 script = folder.parent / "Commands" / command_name / "Ext/CommandModule.bsl"

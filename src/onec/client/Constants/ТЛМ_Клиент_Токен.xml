@@ -21,7 +21,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Токен отправителя</v8:content>
+					<v8:content>ТЛМ_Токен отправителя</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Исходный токен из карточки клиента в центральной базе.</Comment>

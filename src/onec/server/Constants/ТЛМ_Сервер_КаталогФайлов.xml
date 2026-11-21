@@ -21,7 +21,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Каталог файлов телеметрии</v8:content>
+					<v8:content>ТЛМ_Каталог файлов телеметрии</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Абсолютный каталог вне веб-публикации. По умолчанию в Windows C:\temp.</Comment>

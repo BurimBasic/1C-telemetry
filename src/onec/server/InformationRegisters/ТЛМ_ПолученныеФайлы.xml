@@ -37,7 +37,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Полученные файлы</v8:content>
+					<v8:content>ТЛМ_Полученные файлы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>История по клиенту и UUID.</Comment>
@@ -175,7 +175,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Скачать файл</v8:content>
+							<v8:content>ТЛМ_Скачать файл</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment>Скачивает файл выбранной записи сервера телеметрии.</Comment>

@@ -21,7 +21,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Таймаут (сек.)</v8:content>
+					<v8:content>ТЛМ_Таймаут (сек.)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Ноль означает 60 секунд.</Comment>

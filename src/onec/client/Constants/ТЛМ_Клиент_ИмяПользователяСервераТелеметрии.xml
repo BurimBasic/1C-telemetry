@@ -21,7 +21,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Имя пользователя сервера телеметрии</v8:content>
+					<v8:content>ТЛМ_Имя пользователя сервера телеметрии</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Имя пользователя для HTTP Basic на публикации сервера.</Comment>

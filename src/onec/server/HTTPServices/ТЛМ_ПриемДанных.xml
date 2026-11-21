@@ -7,7 +7,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Приём телеметрии</v8:content>
+					<v8:content>ТЛМ_Приём телеметрии</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Маршруты JSON, файл и ping.</Comment>
