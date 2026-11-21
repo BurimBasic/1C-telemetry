@@ -1,0 +1,195 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "server",
+  "extension_version": "1.0.9-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "c399e96abb861317d72d5c3215d9eccfeb792136",
+  "source_commit_tree": "cd1c96ad284b0fd36dc40321b3c66e5bcd9206da",
+  "source_subtree": "08b49e40dc571caa3568dddf18f06d85f74e8d7b",
+  "source_files": 25,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "83db44548bc96c1d0a1c6219316d6022069f6482"
+    },
+    {
+      "path": "Catalogs/ТЛМ_Клиенты.xml",
+      "size": 3847,
+      "sha1": "127b7109fc676285d7643e85a9765ee5f3d28ec1"
+    },
+    {
+      "path": "Catalogs/ТЛМ_Клиенты/Ext/ObjectModule.bsl",
+      "size": 1031,
+      "sha1": "f423abf7ee33c0a5226cc7f73a0a81ec9aa22752"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Сервер.xml",
+      "size": 1262,
+      "sha1": "6450e8b5b5ef13b7d60b587e99f837243a8c9f8e"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Сервер/Ext/Module.bsl",
+      "size": 29218,
+      "sha1": "4c26cbfb234785a96cfcec5e4c188b54af022b61"
+    },
+    {
+      "path": "CommonModules/ТЛМ_СкачиваниеФайлов.xml",
+      "size": 1126,
+      "sha1": "08d0b9cdb91d507ff4d6f3428c8f680e78213537"
+    },
+    {
+      "path": "CommonModules/ТЛМ_СкачиваниеФайлов/Ext/Module.bsl",
+      "size": 4214,
+      "sha1": "5c03776d75ac3c97cf257acda1972aa838d677d3"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 6572,
+      "sha1": "f14ac1d34cb5cff936d2c6764ae3c99d58f9cc44"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 4151,
+      "sha1": "f79ba781ff9a9edf35f15b2b457a428081fc7a7b"
+    },
+    {
+      "path": "Constants/ТЛМ_Сервер_КаталогФайлов.xml",
+      "size": 2419,
+      "sha1": "6cc795d1c99f89a64f13f85f81b9b52f636d13d2"
+    },
+    {
+      "path": "Constants/ТЛМ_Сервер_МаксимальныйРазмерJSONМБ.xml",
+      "size": 2236,
+      "sha1": "fbc8f312e89e089596aeaaf5790f8f1b69c03cd1"
+    },
+    {
+      "path": "HTTPServices/ТЛМ_ПриемДанных.xml",
+      "size": 3216,
+      "sha1": "42d332da75f24957fde80c1c562c5ad7aeefc15d"
+    },
+    {
+      "path": "HTTPServices/ТЛМ_ПриемДанных/Ext/Module.bsl",
+      "size": 1722,
+      "sha1": "d2ac85be23bb02917f0b28ec399164026017ff4d"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеJSON.xml",
+      "size": 5509,
+      "sha1": "6614acad9d2c429a5214c539768267bfc4aeeaff"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеФайлы.xml",
+      "size": 7729,
+      "sha1": "1949244ede4d032222c1cf453063f657f427ed2f"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеФайлы/Commands/ТЛМ_СкачатьФайл/Ext/CommandModule.bsl",
+      "size": 1543,
+      "sha1": "f742c104126745f9bf30d7f6e75a00989b268286"
+    },
+    {
+      "path": "Languages/Русский.xml",
+      "size": 894,
+      "sha1": "d87118f0b5793c848b39e6a291aacf83eb9a03c5"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторСервера.xml",
+      "size": 957,
+      "sha1": "4f2f31b39579b204df8c14bd73eafc0bffbd005f"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторСервера/Ext/Rights.xml",
+      "size": 1977,
+      "sha1": "b66bb2f15e58958fa96d6fe5bebfdeada2e00eda"
+    },
+    {
+      "path": "Roles/ТЛМ_ПриемТелеметрии.xml",
+      "size": 968,
+      "sha1": "0c32b0ce1a45e5ffaefbddcecfe48057e9fc8be0"
+    },
+    {
+      "path": "Roles/ТЛМ_ПриемТелеметрии/Ext/Rights.xml",
+      "size": 1916,
+      "sha1": "2041ed2338525da3deb0fa8823e6d31ae030c8ad"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера.xml",
+      "size": 1137,
+      "sha1": "cbce0b5c3c4aa5f34f2ed3af41086ac85d8c91b5"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера/Ext/Help/ru.html",
+      "size": 2365,
+      "sha1": "bf7abfb42d45e26348ca7a56c715c7d0eb480240"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "94e18ec5391836275a6cd3e1a1742eb233dac6b8"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_server_1.0.9-dev-r1.zip",
+  "zip_size": 32287,
+  "sha256": "be63c7e2aeacaba97f6b43047b45038a615cb3835ebc60bca3b6ae2276a6e5ee",
+  "git_blob_sha1": "dbfc944c13fdea0d633d452ccd1a7673dd0cf66c",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 25,
+    "entry_count": 25
+  },
+  "testing": [
+    {
+      "instrument": "Проверка исходников и локальная регрессия",
+      "version": "Python 3",
+      "run_id": "W001-PREFIX-01",
+      "status": "PASS",
+      "detail": "Сверены синонимы, штатные команды, неизменность имён и UUID; 11 локальных тестов.",
+      "source_commit": "c399e96abb861317d72d5c3215d9eccfeb792136"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "structural",
+      "run_id": "W001-PREFIX-02",
+      "status": "PASS",
+      "detail": "15 структурных проверок расширения.",
+      "source_commit": "c399e96abb861317d72d5c3215d9eccfeb792136"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "8a5040ef2a971bb400772ead6260a3c0",
+      "status": "PASS",
+      "detail": "Нативный синтаксис общего модуля с обновлённой версией.",
+      "source_commit": "c399e96abb861317d72d5c3215d9eccfeb792136"
+    },
+    {
+      "instrument": "BSL Language Server",
+      "version": "1.0.7",
+      "run_id": "W001-PREFIX-03",
+      "status": "FAIL",
+      "detail": "Остались CommonModuleInvalidType, UsingHardcodePath, DataExchangeLoading.",
+      "source_commit": "c399e96abb861317d72d5c3215d9eccfeb792136"
+    },
+    {
+      "instrument": "Установка, CheckConfig и поиск в 1С",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Требуется обновить существующее дополнение в разрешённой тестовой базе.",
+      "source_commit": "c399e96abb861317d72d5c3215d9eccfeb792136"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}

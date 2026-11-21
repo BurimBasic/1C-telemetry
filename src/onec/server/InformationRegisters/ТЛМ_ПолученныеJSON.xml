@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="05aaf8cc-b95a-5946-914b-454f4ff7ad9c">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ТЛМ_ПолученныеJSON" category="Record">
+				<xr:TypeId>2e201ebe-f530-5ed3-9a0b-edf324f4e294</xr:TypeId>
+				<xr:ValueId>ec3a2a09-b397-5f1c-a5d6-94bfe04305ed</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ТЛМ_ПолученныеJSON" category="Manager">
+				<xr:TypeId>56abe9fb-32c2-59e6-93b7-e43894d88c44</xr:TypeId>
+				<xr:ValueId>fb40baf0-e945-5d24-8c94-7c65e6a81609</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ТЛМ_ПолученныеJSON" category="Selection">
+				<xr:TypeId>563f9652-f6b5-5f09-b4c3-c6e20f8ce685</xr:TypeId>
+				<xr:ValueId>50336e46-afa5-51d5-b983-5532d58fa0f4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ТЛМ_ПолученныеJSON" category="List">
+				<xr:TypeId>1f67ada8-2777-5fb1-b73a-aee6579a2c01</xr:TypeId>
+				<xr:ValueId>c3503404-b0ff-51fd-899a-453036decf67</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ТЛМ_ПолученныеJSON" category="RecordSet">
+				<xr:TypeId>6bd2f0c7-4049-5f12-ad1e-f890a6a5d22d</xr:TypeId>
+				<xr:ValueId>c730213d-229c-5cdc-ba96-61766efd03fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ТЛМ_ПолученныеJSON" category="RecordKey">
+				<xr:TypeId>532c8c05-01a0-5cda-9ff5-b59b635a3879</xr:TypeId>
+				<xr:ValueId>356a6651-94f0-5fa3-bcba-527cb140c55d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ТЛМ_ПолученныеJSON" category="RecordManager">
+				<xr:TypeId>eef15135-0d5d-5e2e-993e-cda03860a827</xr:TypeId>
+				<xr:ValueId>80cbbf46-5753-5e2a-9e80-454578e3cec6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_ПолученныеJSON</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЛМ_Полученные JSON</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>История по клиенту и UUID.</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<EditType>InDialog</EditType>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="c531cbff-c7a6-54f4-b85b-24b24d0464a8">
+				<Properties>
+					<Name>Клиент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Клиент</Comment>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТЛМ_Клиенты</v8:Type>
+					</Type>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="a3c190d5-eb88-5115-bb57-42b3d2bb87d2">
+				<Properties>
+					<Name>ИдентификаторСообщения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>UUID сообщения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>UUID сообщения</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>Index</Indexing>
+				</Properties>
+			</Dimension>
+			<Resource uuid="829d3742-b4f6-5b97-bca0-05ea5408bbdf">
+				<Properties>
+					<Name>ДатаПолучения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения (UTC)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Дата получения (UTC)</Comment>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+					<Indexing>Index</Indexing>
+				</Properties>
+			</Resource>
+			<Resource uuid="08b386d8-95e8-5f5e-beae-52323b1966bf">
+				<Properties>
+					<Name>JSON</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходный JSON</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Исходный JSON</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Resource>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.17">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>Constant.ТЛМ_Клиент_АдресСервера</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_ИмяПользователяСервераТелеметрии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_ПутьКСертификату</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_Таймаут</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ТЛМ_Клиент_Токен</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+</Rights>

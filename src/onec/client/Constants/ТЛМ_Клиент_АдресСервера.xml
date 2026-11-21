@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="d3f7dd7c-6718-5b60-b062-a9bba9432c84">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Клиент_АдресСервера" category="Manager">
+				<xr:TypeId>b043b79b-0589-5cbe-9e59-e0f17f51e696</xr:TypeId>
+				<xr:ValueId>d7f0b7b3-aff7-5c73-8d6c-875c804153e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Клиент_АдресСервера" category="ValueManager">
+				<xr:TypeId>a1bbfa88-90c8-5515-97c0-04e9214f6129</xr:TypeId>
+				<xr:ValueId>df269acd-cd72-5a24-8cdf-f30f9b9c8f1f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Клиент_АдресСервера" category="ValueKey">
+				<xr:TypeId>89456850-6716-596b-a51a-148822ce856d</xr:TypeId>
+				<xr:ValueId>08cc0298-2aae-53fd-a5d9-7fecceacedab</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиент_АдресСервера</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЛМ_HTTPS-адрес сервера</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Полный URL корня HTTP-сервиса.</Comment>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<PasswordMode>false</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>

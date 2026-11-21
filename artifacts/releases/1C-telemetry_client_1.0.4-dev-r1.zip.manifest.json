@@ -1,0 +1,160 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "client",
+  "extension_version": "1.0.4-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c",
+  "source_commit_tree": "7660852501edcf0093842b3f1edecf777cdd88e6",
+  "source_subtree": "1966a5e5799ed2f1c6f8f30b3e5e3ee3efb84636",
+  "source_files": 18,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "1db79dac81c42e43388a91184bbe17523d83e1e2"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент.xml",
+      "size": 1288,
+      "sha1": "9d1831e359991725c8e33074174ee2cbbe825622"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент/Ext/Module.bsl",
+      "size": 19675,
+      "sha1": "3eaeea91ff4a593ab408f91888c4a89b7ffb50cf"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 2484,
+      "sha1": "e8b10659cd55cebaee28721bd42abeea6433eafd"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 3912,
+      "sha1": "1421c158a6602d196685ad73c78d9a2d8f49a5b5"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_АдресСервера.xml",
+      "size": 2131,
+      "sha1": "b046d4d15827f70f99475134fe395beb31b02b26"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ПутьКСертификату.xml",
+      "size": 2184,
+      "sha1": "0729a4cdd0b706852eb85378a5fefc21a859210c"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Таймаут.xml",
+      "size": 2116,
+      "sha1": "ec0ae51cf51b6817987761929b24a9306368b75f"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Токен.xml",
+      "size": 2128,
+      "sha1": "0ff16d8399941b6fea75cdab6861072ecedb37c2"
+    },
+    {
+      "path": "Languages/Русский.xml",
+      "size": 894,
+      "sha1": "c5d2e48522ea08d53509baaebdc8584d9829ceb8"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента.xml",
+      "size": 944,
+      "sha1": "ec9960ea7eb47cff3e56e8273996ada88d52ef10"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента/Ext/Rights.xml",
+      "size": 1351,
+      "sha1": "b9235acd6578e15da2f1c159bb10433252788a52"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии.xml",
+      "size": 938,
+      "sha1": "34dc8c1b79876d3e5d920348f62e7ed87f53624c"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии/Ext/Rights.xml",
+      "size": 1083,
+      "sha1": "d4425e50e96952dcbdaec77530904ada363252ff"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента.xml",
+      "size": 1130,
+      "sha1": "3239a0e6b2ac540cae8076b5a8ce0ee1c96ba865"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help/ru.html",
+      "size": 1489,
+      "sha1": "093f6df247e7a9566ff6ff024ba030518bf617a9"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "2232801f142b096818616dec1a19949b63c9b4ef"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_client_1.0.4-dev-r1.zip",
+  "zip_size": 19427,
+  "sha256": "93ae1a37c2044f40dcaef3c841f5c4e9a5483a955a4d601e13de28703f856c0d",
+  "git_blob_sha1": "beb6dc0c06ce8e77cc2271aa92e5b9c19472edc0",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 18,
+    "entry_count": 18
+  },
+  "testing": [
+    {
+      "instrument": "Локальные тесты и проверка исходников",
+      "version": "Python 3.12",
+      "run_id": "W001-TOKEN-01",
+      "status": "PASS",
+      "detail": "11 тестов, XML/BSL, версии, проверки токена и справки.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "structural",
+      "run_id": "W001-TOKEN-02",
+      "status": "PASS",
+      "detail": "15 проверок на каждое расширение, 13 на образец.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "Целевая 1С CheckConfig и стендовая приёмка",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Установка новой версии и обработка запросов недоступны с текущими правами. Тестовая публикация возвращает Basic challenge до обработчика.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "c2f5da28651011a77c9b53e5c482d813d",
+      "status": "PASS",
+      "detail": "Общий модуль, Server и ExternalConnection.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    },
+    {
+      "instrument": "BSL Language Server",
+      "version": "1.0.7",
+      "run_id": "W001-TOKEN-03",
+      "status": "FAIL",
+      "detail": "Стандартный профиль: прежняя диагностика CommonModuleInvalidType.",
+      "source_commit": "248f6e577e2ac051ff1c5ba1d88acd852815f96c"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}

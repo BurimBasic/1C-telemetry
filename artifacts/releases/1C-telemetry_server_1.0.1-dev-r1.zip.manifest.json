@@ -1,0 +1,172 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "server",
+  "extension_version": "1.0.1-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750",
+  "source_commit_tree": "2579afd5ebb53404da5ee8fe1f83004d857b78f8",
+  "source_subtree": "e2598084408e818ee2df93a568c9606f2994ae30",
+  "source_files": 21,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "ac3b51c3e48d83dbfebdba3d23c68037588abf3b"
+    },
+    {
+      "path": "Catalogs/ТЛМ_Клиенты.xml",
+      "size": 3829,
+      "sha1": "00ae4a76633424c6e22b8bbcf41c7967b648d971"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Сервер.xml",
+      "size": 1255,
+      "sha1": "c90cc057168b96f6c8706b4bf0a03e23fc241a7b"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Сервер/Ext/Module.bsl",
+      "size": 30814,
+      "sha1": "b6d6ee13a0aefde7ba5e2b87c59ae7dadd10db60"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 5692,
+      "sha1": "2bdef8deaa34a5ea5592193f9d0f1f470af1c869"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 4114,
+      "sha1": "452871078856aa10e973dffe55636216eff04a2b"
+    },
+    {
+      "path": "Constants/ТЛМ_Сервер_КаталогФайлов.xml",
+      "size": 2161,
+      "sha1": "ae895c9b8db5cfdd2dc04dcc8dfec638d45e8cc9"
+    },
+    {
+      "path": "Constants/ТЛМ_Сервер_МаксимальныйРазмерJSONМБ.xml",
+      "size": 2230,
+      "sha1": "092fe6e77ad52483df33e23fccd33bd1af2000b0"
+    },
+    {
+      "path": "HTTPServices/ТЛМ_ПриемДанных.xml",
+      "size": 3209,
+      "sha1": "4bd2ee49c63211bde950940b47a3db435c6ccf2a"
+    },
+    {
+      "path": "HTTPServices/ТЛМ_ПриемДанных/Ext/Module.bsl",
+      "size": 1722,
+      "sha1": "d2ac85be23bb02917f0b28ec399164026017ff4d"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеJSON.xml",
+      "size": 5502,
+      "sha1": "25075830ce13ee28069d5900b6163f2ba592ca4e"
+    },
+    {
+      "path": "InformationRegisters/ТЛМ_ПолученныеФайлы.xml",
+      "size": 6870,
+      "sha1": "01f7572eb13ce9c14906fc4f103bff53be24d088"
+    },
+    {
+      "path": "Languages/ТЛМ_РусскийЯзыкСервера.xml",
+      "size": 942,
+      "sha1": "15bd75c346a2ee51fee6836c389f18b6c4e685ed"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторСервера.xml",
+      "size": 950,
+      "sha1": "91e8075ea2e1ba7ea360628a8bfdb4f5bc2b50b3"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторСервера/Ext/Rights.xml",
+      "size": 1717,
+      "sha1": "3a895ea0f338243e776cc7f2cb316958eaaf3ecc"
+    },
+    {
+      "path": "Roles/ТЛМ_ПриемТелеметрии.xml",
+      "size": 961,
+      "sha1": "f4cdd32e20bd8f6ff8fcfc867d7165837f4d68a8"
+    },
+    {
+      "path": "Roles/ТЛМ_ПриемТелеметрии/Ext/Rights.xml",
+      "size": 1916,
+      "sha1": "2041ed2338525da3deb0fa8823e6d31ae030c8ad"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера.xml",
+      "size": 1130,
+      "sha1": "82ec6adba14895f31b8bb87cdd71f7d78e349256"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаСервера/Ext/Help/ru.html",
+      "size": 1763,
+      "sha1": "0da6ba52c5a042f43b6d8ad0bcae2dc2e0c7aa9f"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "3f60217db9bd7fbdceaabb6f9a7c65435b093d62"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_server_1.0.1-dev-r1.zip",
+  "zip_size": 27615,
+  "sha256": "c2d687cdef37a67ef8ed655411b4c540722dbb873246b49f5d6f78b575b96d02",
+  "git_blob_sha1": "6fcb57e8192c852fd8f70e990ea00c9529ca4e76",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 21,
+    "entry_count": 21
+  },
+  "testing": [
+    {
+      "instrument": "XSD LocalStringType (Copyright)",
+      "version": "2.17, lxml",
+      "run_id": "W001-XDTO-01",
+      "status": "PASS",
+      "detail": "Исходный строковый Copyright отвергнут, локализованный Copyright принят",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    },
+    {
+      "instrument": "Тесты Python и проверка исходников",
+      "version": "Python 3.12",
+      "run_id": "W001-XDTO-02",
+      "status": "PASS",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "структурная проверка",
+      "run_id": "W001-XDTO-03",
+      "status": "PASS",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    },
+    {
+      "instrument": "1C Design syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "02350639d3c3372a94b1bce941b5becd",
+      "status": "PASS",
+      "detail": "Синтаксис общего модуля",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    },
+    {
+      "instrument": "Штатный импорт / CheckConfig",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "source_commit": "f65c9f8e05ef2cf12b221bbcf620fea02e474750"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}

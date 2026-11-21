@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" format="Hierarchical" version="2.17">
+	<ConfigVersions>
+		<Metadata name="CommonModule.ТЛМ_Клиент" id="52f5a164-8d34-59a7-920a-3d12c8065232" configVersion="ff42cb17d9d72873483713e39e747c3708af68f6" />
+		<Metadata name="CommonModule.ТЛМ_Клиент.Module" id="52f5a164-8d34-59a7-920a-3d12c8065232.0" configVersion="53c32a7fb1a21dbc66e8afbdddb2455aaa0fd4f7" />
+		<Metadata name="Configuration.ТЛМ_Клиент" id="8813e755-abc9-5632-ba88-edf1b8d1baa8" configVersion="97dc6793cd842d71d1168d5ee1e134485a2b2455" />
+		<Metadata name="Constant.ТЛМ_Клиент_АдресСервера" id="d3f7dd7c-6718-5b60-b062-a9bba9432c84" configVersion="07fabd4d42f52de2e577aa825f9144a2ce996167" />
+		<Metadata name="Constant.ТЛМ_Клиент_ПутьКСертификату" id="5de895f8-d33c-5508-a476-940bd3790de1" configVersion="c40739ac6f243ff6db0743ed1ceb97ad08e13a13" />
+		<Metadata name="Constant.ТЛМ_Клиент_Таймаут" id="febf1b23-4ac7-5863-a905-16130ca99bdc" configVersion="2996fa81a82692e6fdb2582154c1f5a3f220ebcc" />
+		<Metadata name="Constant.ТЛМ_Клиент_Токен" id="0f3b1119-7788-5db6-b6fa-f12c218810b2" configVersion="2173f8340456346667f39a882b446f896ba32721" />
+		<Metadata name="Constant.ТЛМ_Клиент_ИмяПользователяСервераТелеметрии" id="cbbcd8eb-d0c9-55cb-80a2-217a7732e747" configVersion="186c4929deea0a700944e3e1a26fdf28b1d0e603" />
+		<Metadata name="Constant.ТЛМ_Клиент_ПарольПользователяСервераТелеметрии" id="33dd6c38-1fc6-5766-9b8e-992d1fac4336" configVersion="75fe530d5fa1ea70e6af84443a67cf048c205fb5" />
+		<Metadata name="Constant.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии" id="40a96cfa-5341-53c3-bb2c-04b5d6bcc044" configVersion="36b7e1f72aa3f4a7a51b2124822d79a63f6fb34f" />
+		<Metadata name="DataProcessor.ТЛМ_ПроверкаТелеметрии" id="86cc2c6d-b66f-5e00-9568-994f58a6a16f" configVersion="13645446ef65158912fbb95db9662213489ea10e" />
+		<Metadata name="DataProcessor.ТЛМ_ПроверкаТелеметрии.Form.Форма" id="3905b86e-d519-5881-9315-ac9800db3f85" configVersion="3e543c8907d4aa8d66c268078b3e25b8e3c9693b" />
+		<Metadata name="DataProcessor.ТЛМ_ПроверкаТелеметрии.Form.Форма.Form" id="3905b86e-d519-5881-9315-ac9800db3f85.0" configVersion="0796acdfd008027b85df476acf597bd5a8763c9a" />
+		<Metadata name="Language.Русский" id="89200dc3-151c-58ec-aedb-c2eb47d5162b" configVersion="48560732fc16a19e614260f04690417ec4272164" />
+		<Metadata name="Role.ТЛМ_АдминистраторКлиента" id="1b122e4e-4d12-5683-989a-f4de5831161e" configVersion="b1629bd82b1c5183b619a131c72bbba50464497f" />
+		<Metadata name="Role.ТЛМ_АдминистраторКлиента.Rights" id="1b122e4e-4d12-5683-989a-f4de5831161e.0" configVersion="e1adbc21790e824f61ac2de8e63fba77e6cd7ecf" />
+		<Metadata name="Role.ТЛМ_ОтправкаТелеметрии" id="7615cc4f-2e8a-58fc-a29c-4dac14e099af" configVersion="9b6bc637de622488f661df940591c56067869e57" />
+		<Metadata name="Role.ТЛМ_ОтправкаТелеметрии.Rights" id="7615cc4f-2e8a-58fc-a29c-4dac14e099af.0" configVersion="d82e7fe6e4f72068df1de50c9f4b53fce5f9eb19" />
+		<Metadata name="Subsystem.ТЛМ_СправкаКлиента" id="76845282-3f50-51e6-aeb1-cbdc3dca34c4" configVersion="6c397c7a4ff7d66a5553f879dae13a989777a1bb" />
+	</ConfigVersions>
+</ConfigDumpInfo>

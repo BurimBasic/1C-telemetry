@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="40a96cfa-5341-53c3-bb2c-04b5d6bcc044">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии" category="Manager">
+				<xr:TypeId>8d7565f5-bf57-5d6e-aa72-7f97d48f8a69</xr:TypeId>
+				<xr:ValueId>6e7d7642-c34c-517b-a3eb-ad937fd496ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии" category="ValueManager">
+				<xr:TypeId>30d6f12b-00e1-557c-b377-ec6e9663f5a9</xr:TypeId>
+				<xr:ValueId>e592f000-7ee2-5f54-8a3d-a72403fb7383</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии" category="ValueKey">
+				<xr:TypeId>d36604ff-6e6d-5d52-bcaf-d0d16630b7c8</xr:TypeId>
+				<xr:ValueId>2fbfe582-7146-5026-822a-4d30e95c34b0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЛМ_Использование авторизации на сервере телеметрии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Использовать HTTP Basic вместе с токеном. По умолчанию выключено.</Comment>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<PasswordMode>false</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>

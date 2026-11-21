@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="0f3b1119-7788-5db6-b6fa-f12c218810b2">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ТЛМ_Клиент_Токен" category="Manager">
+				<xr:TypeId>a86ed14f-e735-5052-aa14-e9592ee88f27</xr:TypeId>
+				<xr:ValueId>c9908c19-51d9-520d-ba08-9b23c6848ccc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ТЛМ_Клиент_Токен" category="ValueManager">
+				<xr:TypeId>48a39058-35c2-51a1-a2b7-d7b367719db5</xr:TypeId>
+				<xr:ValueId>369452c8-96db-5921-af9f-9ecf95fb0daf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ТЛМ_Клиент_Токен" category="ValueKey">
+				<xr:TypeId>e9e1d7c2-5878-5aaf-bb11-6b1c23e2e457</xr:TypeId>
+				<xr:ValueId>669be95c-ebd6-53bb-9aec-ceb51bdfbdc2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиент_Токен</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЛМ_Токен отправителя</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Исходный токен из карточки клиента в центральной базе.</Comment>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<PasswordMode>true</PasswordMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+	</Constant>
+</MetaDataObject>

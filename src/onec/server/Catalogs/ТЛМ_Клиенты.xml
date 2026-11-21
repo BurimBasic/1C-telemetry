@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="50ac3c01-869f-51ac-8c3f-559d97cf9f32">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ТЛМ_Клиенты" category="Object">
+				<xr:TypeId>b3ad8f01-f41f-5bfe-985f-f9bf4de73b83</xr:TypeId>
+				<xr:ValueId>6cc59339-34c9-5ebf-b64a-2831c576d1fe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ТЛМ_Клиенты" category="Ref">
+				<xr:TypeId>96254c8f-efbc-53f4-a3f7-6c42b0c8d28a</xr:TypeId>
+				<xr:ValueId>6081bcb6-eb55-562b-964d-eefd91a55a5a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ТЛМ_Клиенты" category="Selection">
+				<xr:TypeId>df6d641c-4c1c-593c-b233-1c5b90deb001</xr:TypeId>
+				<xr:ValueId>2b569610-5237-5371-9b79-de4a00ee2ddf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ТЛМ_Клиенты" category="List">
+				<xr:TypeId>c4f2e3b2-2155-5b8f-88fb-6ee9f66a5d91</xr:TypeId>
+				<xr:ValueId>0811441c-03b7-51a3-a17f-c1c875723cc1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ТЛМ_Клиенты" category="Manager">
+				<xr:TypeId>5c473a10-bc0d-5b6b-b271-eac27d7f0591</xr:TypeId>
+				<xr:ValueId>7dffb241-b248-54ee-a30f-a36bbaa03d6a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТЛМ_Клиенты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЛМ_Клиенты телеметрии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>По одному элементу на источник.</Comment>
+			<Hierarchical>false</Hierarchical>
+			<UseStandardCommands>true</UseStandardCommands>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>150</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="fdadca16-dd9a-5fab-b7c2-421560b2bdbb">
+				<Properties>
+					<Name>Активен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приём разрешён</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Приём разрешён</Comment>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e841fab7-3748-519b-8c8a-f4d570bd17a8">
+				<Properties>
+					<Name>Токен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Токен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Токен, назначенный администратором вручную.</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<FullTextSearch>DontUse</FullTextSearch>
+					<DataHistory>DontUse</DataHistory>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

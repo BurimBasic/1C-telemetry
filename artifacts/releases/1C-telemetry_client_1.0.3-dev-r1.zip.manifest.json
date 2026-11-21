@@ -1,0 +1,151 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "client",
+  "extension_version": "1.0.3-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "bac9784f42d50435cc01a46663ed12643a3586e9",
+  "source_commit_tree": "fbf21638581c9aebb5896ac26b9443f37a2412ae",
+  "source_subtree": "6a5c722a2d958f04db79b9eb85756752c900d9df",
+  "source_files": 18,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "8846eeed51a988fa975fccb975887de658e32a69"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент.xml",
+      "size": 1288,
+      "sha1": "9d1831e359991725c8e33074174ee2cbbe825622"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент/Ext/Module.bsl",
+      "size": 18050,
+      "sha1": "9863ca56ac738bd6adf2836f490d2914632b2811"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 2484,
+      "sha1": "f4cd3f81057ebe53531c8f2d70d6a5df3f30c33f"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 3912,
+      "sha1": "1f1d9968df8a56c51d78d9bcd1827852e2270691"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_АдресСервера.xml",
+      "size": 2131,
+      "sha1": "b046d4d15827f70f99475134fe395beb31b02b26"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ПутьКСертификату.xml",
+      "size": 2184,
+      "sha1": "0729a4cdd0b706852eb85378a5fefc21a859210c"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Таймаут.xml",
+      "size": 2116,
+      "sha1": "ec0ae51cf51b6817987761929b24a9306368b75f"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Токен.xml",
+      "size": 2107,
+      "sha1": "dfbd5c042a9574caafe9d4e87bb90d815af8629d"
+    },
+    {
+      "path": "Languages/Русский.xml",
+      "size": 894,
+      "sha1": "c5d2e48522ea08d53509baaebdc8584d9829ceb8"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента.xml",
+      "size": 944,
+      "sha1": "ec9960ea7eb47cff3e56e8273996ada88d52ef10"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента/Ext/Rights.xml",
+      "size": 1351,
+      "sha1": "b9235acd6578e15da2f1c159bb10433252788a52"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии.xml",
+      "size": 938,
+      "sha1": "34dc8c1b79876d3e5d920348f62e7ed87f53624c"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии/Ext/Rights.xml",
+      "size": 1083,
+      "sha1": "d4425e50e96952dcbdaec77530904ada363252ff"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента.xml",
+      "size": 1130,
+      "sha1": "3239a0e6b2ac540cae8076b5a8ce0ee1c96ba865"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help/ru.html",
+      "size": 1489,
+      "sha1": "093f6df247e7a9566ff6ff024ba030518bf617a9"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "516e6a479e7cefa43850e91bac542ee4f77930c9"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_client_1.0.3-dev-r1.zip",
+  "zip_size": 18921,
+  "sha256": "72463d717e030e5772a6482fe730072d189822545c3bc1baf71685a08bd0c0fc",
+  "git_blob_sha1": "e1e01a2152b0cba880e9d4657ca81fdcec7c15f0",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 18,
+    "entry_count": 18
+  },
+  "testing": [
+    {
+      "instrument": "Локальные тесты и проверка исходников",
+      "version": "Python 3.12",
+      "run_id": "W001-SDBL-01",
+      "status": "PASS",
+      "detail": "10 тестов. Регрессия отвергает ограниченные 2048, принимает неограниченную длину",
+      "source_commit": "bac9784f42d50435cc01a46663ed12643a3586e9"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "структурная проверка",
+      "run_id": "W001-SDBL-02",
+      "status": "PASS",
+      "source_commit": "bac9784f42d50435cc01a46663ed12643a3586e9"
+    },
+    {
+      "instrument": "1C Design syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "8d489d3027dc528924d5b529a7389257",
+      "status": "PASS",
+      "detail": "Синтаксис общего модуля",
+      "source_commit": "bac9784f42d50435cc01a46663ed12643a3586e9"
+    },
+    {
+      "instrument": "Обновление конфигурации БД / CheckConfig",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Ожидается проверка на целевой тестовой базе",
+      "source_commit": "bac9784f42d50435cc01a46663ed12643a3586e9"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}

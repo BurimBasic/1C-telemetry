@@ -1,0 +1,219 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "client",
+  "extension_version": "1.0.7-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4",
+  "source_commit_tree": "c331cdee95c9858648a721e9f7a8bb2995111645",
+  "source_subtree": "1416d75507fa85ae84f52fb83d3a2088e68726d9",
+  "source_files": 25,
+  "files": [
+    {
+      "path": "BUILD_STATUS.json",
+      "size": 147,
+      "sha1": "e8676e1481a353b7ac62e664e65e339fd3915921"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент.xml",
+      "size": 1288,
+      "sha1": "9d1831e359991725c8e33074174ee2cbbe825622"
+    },
+    {
+      "path": "CommonModules/ТЛМ_Клиент/Ext/Module.bsl",
+      "size": 21660,
+      "sha1": "67493ffef91764dabafb51f6301c7ab6b54ad11b"
+    },
+    {
+      "path": "ConfigDumpInfo.xml",
+      "size": 3733,
+      "sha1": "4bd73fd20f0878c2fccabf05b96fe8e349b8b07d"
+    },
+    {
+      "path": "Configuration.xml",
+      "size": 4345,
+      "sha1": "97f19a56af0ccf11b5e6bed82d9c77828624daf9"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_АдресСервера.xml",
+      "size": 2137,
+      "sha1": "d4f1504d2658cba501cc2eaf00181261ad3cc0d5"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ИмяПользователяСервераТелеметрии.xml",
+      "size": 2376,
+      "sha1": "0608ae54bfc43540b48cecb07f440f42175a323f"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ИспользованиеАвторизацииНаСервереТелеметрии.xml",
+      "size": 2374,
+      "sha1": "11b846675475b0d89c539b7b6b1fffa82692a161"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ПарольПользователяСервераТелеметрии.xml",
+      "size": 2386,
+      "sha1": "1be93b71f18a61f3dd2dd7642a9af4d994f6d7d2"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_ПутьКСертификату.xml",
+      "size": 2190,
+      "sha1": "41efb3c6bf62f587b08299294252925460b8e8c4"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Таймаут.xml",
+      "size": 2122,
+      "sha1": "56623cc2b4627813cf6b5c3174c72344a78b3597"
+    },
+    {
+      "path": "Constants/ТЛМ_Клиент_Токен.xml",
+      "size": 2134,
+      "sha1": "29431aef95cebcdb19625038bdbd97d2cd698bfc"
+    },
+    {
+      "path": "DataProcessors/ТЛМ_ПроверкаТелеметрии.xml",
+      "size": 2380,
+      "sha1": "a1c3073eb4b7027e506782c71b8cff853288c552"
+    },
+    {
+      "path": "DataProcessors/ТЛМ_ПроверкаТелеметрии/Forms/Форма.xml",
+      "size": 1686,
+      "sha1": "614ada85828b245a350324bf6fe04a7749f7538e"
+    },
+    {
+      "path": "DataProcessors/ТЛМ_ПроверкаТелеметрии/Forms/Форма/Ext/Form.xml",
+      "size": 7986,
+      "sha1": "9d60a85324bf518e6af2019e1a5774c5bde51f89"
+    },
+    {
+      "path": "DataProcessors/ТЛМ_ПроверкаТелеметрии/Forms/Форма/Ext/Form/Module.bsl",
+      "size": 13071,
+      "sha1": "4c8e9d28bb3d18fa5760e236f369693cdf667d4a"
+    },
+    {
+      "path": "Languages/Русский.xml",
+      "size": 894,
+      "sha1": "c5d2e48522ea08d53509baaebdc8584d9829ceb8"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента.xml",
+      "size": 944,
+      "sha1": "ec9960ea7eb47cff3e56e8273996ada88d52ef10"
+    },
+    {
+      "path": "Roles/ТЛМ_АдминистраторКлиента/Ext/Rights.xml",
+      "size": 3445,
+      "sha1": "ac0dc54cf7efd3962b0a060eb0f8584bc0133aff"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии.xml",
+      "size": 938,
+      "sha1": "34dc8c1b79876d3e5d920348f62e7ed87f53624c"
+    },
+    {
+      "path": "Roles/ТЛМ_ОтправкаТелеметрии/Ext/Rights.xml",
+      "size": 1696,
+      "sha1": "ce8403c88a18eaa7e1c134084d57e03c5106673d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента.xml",
+      "size": 1258,
+      "sha1": "6458098fd81c53033c6cf5add24dce372d62d9e1"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help.xml",
+      "size": 250,
+      "sha1": "5603ac0ba845d3983a6f83eb9c0db15126c8dd3d"
+    },
+    {
+      "path": "Subsystems/ТЛМ_СправкаКлиента/Ext/Help/ru.html",
+      "size": 2715,
+      "sha1": "4668d314cc24293ac56c535532e3b03135e021f9"
+    },
+    {
+      "path": "VERSION",
+      "size": 10,
+      "sha1": "70ad1cd3b537b782b1191840eae21484083ee581"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_client_1.0.7-dev-r1.zip",
+  "zip_size": 32381,
+  "sha256": "ed8853310bddd28259b2c1afccc66977387a1f0fe978aceeba19138846c9f403",
+  "git_blob_sha1": "ecdd0f450bace9a7fac4a6610e34b13a9ead21e4",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 25,
+    "entry_count": 25
+  },
+  "testing": [
+    {
+      "instrument": "Проверка исходников и локальная регрессия",
+      "version": "Python 3",
+      "run_id": "W001-CHECKFORM-01",
+      "status": "PASS",
+      "detail": "13 объектов клиента, два модуля и 11 локальных тестов.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "cfe-validate",
+      "version": "structural",
+      "run_id": "W001-CHECKFORM-02",
+      "status": "PASS",
+      "detail": "16 структурных проверок клиентского расширения.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "form-validate",
+      "version": "structural",
+      "run_id": "W001-CHECKFORM-03",
+      "status": "PASS",
+      "detail": "27 проверок управляемой формы, команд и событий.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "eee6612ff6ddb30792ff2bdb1225b3b8",
+      "status": "PASS",
+      "detail": "Проверен точный текст общего модуля клиента.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "7173851d2903dcde99319dd0e65f85c9",
+      "status": "PASS",
+      "detail": "Серверная часть формы проверена отдельно в одном модуле с библиотекой.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "1C Designer syntax_check",
+      "version": "8.3.27.1508 education",
+      "run_id": "36be9f0180898b35c02fea8621b715a7",
+      "status": "PASS",
+      "detail": "Клиентская часть формы проверена изолированно с заменой полей и недоступных в проверочном модуле вызовов сервера.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "BSL Language Server",
+      "version": "1.0.7",
+      "run_id": "W001-CHECKFORM-04",
+      "status": "FAIL",
+      "detail": "Осталась CommonModuleInvalidType общего модуля. В форме анализатор не распознаёт удаление временной копии отдельной процедурой.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    },
+    {
+      "instrument": "Нативный CheckConfig и приёмка формы",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "detail": "Обновить клиент в тестовой базе и проверить команды в 1С:Предприятие. В изолированном инструменте проверка формы отклонена.",
+      "source_commit": "691f257e9d4f7fff22e02495be5643627137d9e4"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1C-telemetry. Copyright © 2026 Тарасов Роман Олегович. Все права защищены. -->
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Language uuid="138d420f-1e10-5f65-9c74-53659cf3826a">
+		<InternalInfo/>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Русский</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e</ExtendedConfigurationObject>
+			<LanguageCode>ru</LanguageCode>
+		</Properties>
+	</Language>
+</MetaDataObject>

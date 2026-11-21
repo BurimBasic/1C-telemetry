@@ -1,0 +1,113 @@
+{
+  "format": "TLM_SOURCE_ZIP_RELEASE_MANIFEST_V1",
+  "component": "examples",
+  "extension_version": "1.0.0-dev",
+  "revision": 1,
+  "status": "TEST",
+  "source_commit": "2fce80a1493ce0c90524b200b6bbf671fdbda0ca",
+  "source_commit_tree": "a85d77bb15cd883d646e614133b56ef96d2cc275",
+  "source_subtree": "8ae761f2738a8d125416059be89f0a2736721877",
+  "source_files": 12,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3649,
+      "sha1": "8cd725558b557ead7ded9721e735fafdc22caf2d"
+    },
+    {
+      "path": "bsl/НастройкаКлиента.bsl",
+      "size": 2699,
+      "sha1": "f849fe68e5ed6296dd07dbfc39a8fe49b4eecea8"
+    },
+    {
+      "path": "bsl/НастройкаСервера.bsl",
+      "size": 3020,
+      "sha1": "dda164314fac5be35c1e7d29cb63db602caada4a"
+    },
+    {
+      "path": "curl_examples.txt",
+      "size": 2161,
+      "sha1": "c5622ecdb69fe3698a64002c2b0989e71d994028"
+    },
+    {
+      "path": "powershell/Send-Telemetry.ps1",
+      "size": 2724,
+      "sha1": "09728bf53c0af777af50b7761d83125ffe9313e0"
+    },
+    {
+      "path": "python/send_telemetry.py",
+      "size": 3780,
+      "sha1": "f8eb2b1a13bd36993e11f259f8e2efacb2644ae0"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания.xml",
+      "size": 1337,
+      "sha1": "c2e337ec8f3b9209a83b77a1dd079fd86a5ec941"
+    },
+    {
+      "path": "schedule/CommonModules/ТЛМ_ПримерРасписания/Ext/Module.bsl",
+      "size": 1404,
+      "sha1": "1d2e5cc9a8b048d64b7d61e6ae904fe2748e4fbb"
+    },
+    {
+      "path": "schedule/ConfigDumpInfo.xml",
+      "size": 1198,
+      "sha1": "0d55c99ac701f3a949325786dae90a17085466b6"
+    },
+    {
+      "path": "schedule/Configuration.xml",
+      "size": 3537,
+      "sha1": "2afbd85c3a1dea163d52cd77eeb5939fb241b9fe"
+    },
+    {
+      "path": "schedule/Languages/ТЛМ_РусскийЯзыкПримера.xml",
+      "size": 942,
+      "sha1": "4b169fdaf29137d9cebaea4ce91f258bd2190d49"
+    },
+    {
+      "path": "schedule/ScheduledJobs/ТЛМ_ОтправкаПоРасписанию.xml",
+      "size": 1363,
+      "sha1": "7468b84fc3fac9f8bdc7506cc176173fab367674"
+    }
+  ],
+  "zip_path": "artifacts/releases/1C-telemetry_examples_1.0.0-dev.zip",
+  "zip_size": 14153,
+  "sha256": "3868a1e970562b46ef81ecf14ad07f58cae971d2e0224dc54d0ef2d04e3a737f",
+  "git_blob_sha1": "71bdf2a4e2b131f93aa4db807c3eeb971d49e428",
+  "archive": {
+    "method": 8,
+    "bit11": "all non-ASCII names",
+    "zip32": true,
+    "file_count": 12,
+    "entry_count": 12
+  },
+  "testing": [
+    {
+      "instrument": "Python unittest + local HTTPS fixture",
+      "version": "Python 3.12.14, requests 2.34.2",
+      "run_id": "W001-E01",
+      "status": "PASS",
+      "source_commit": "2fce80a1493ce0c90524b200b6bbf671fdbda0ca",
+      "detail": "Проверены исходный JSON, пустой и двоичный файл, кириллица, неверный ответ, редирект, доверие и SAN на локальном HTTPS fixture; cURL отдельно проверил raw bytes"
+    },
+    {
+      "instrument": "PowerShell Language.Parser on Windows",
+      "version": "5.1.17763.8146",
+      "run_id": "W001-E02",
+      "status": "PASS",
+      "source_commit": "2fce80a1493ce0c90524b200b6bbf671fdbda0ca",
+      "detail": "Синтаксис скачанного скрипта"
+    },
+    {
+      "instrument": "1C runtime and Apache",
+      "version": "8.3.27.2342",
+      "run_id": null,
+      "status": "NOT_RUN",
+      "source_commit": "2fce80a1493ce0c90524b200b6bbf671fdbda0ca"
+    }
+  ],
+  "limitations": [
+    "TEST. Результаты установки и CheckConfig приведены в отчёте приёмки.",
+    "Передача 2–3 ГиБ зависит от платформы и публикации. Подтверждённого предела пока нет."
+  ]
+}
